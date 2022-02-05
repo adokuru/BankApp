@@ -40,9 +40,38 @@ class DashboardController extends Controller
     }
 
 
-    public function FAQ()
+    public function gettingstarted()
     {
 
-        return view('FAQ');
+        return view('getting-started');
+    }
+
+    public function register()
+    {
+
+        return view('register');
+    }
+
+    public function termsofservice()
+    {
+
+        return view('terms-of-service');
+    }
+
+    public function helpcenter()
+    {
+
+        return view('help-center');
+    }
+
+    public function features()
+    {
+
+        return view('features');
+    }
+    public function faq()
+    {
+
+        return view('faq');
     }
 }

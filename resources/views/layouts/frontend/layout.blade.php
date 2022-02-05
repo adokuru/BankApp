@@ -44,31 +44,26 @@
 
 
 <body>
-    <div id="wrapper">
-        @include('components.header')
-        @yield('main')
+    @include('components.header')
+    @yield('main')
+    @include('components.footer')
 
-
-        @include('components.footer')
-
-
+    <div class="go-top">
+        <i class="ri-arrow-up-s-line"></i>
     </div>
-    <!-- #wrapper -->
-
-
     <!-- jQuery -->
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery-1.12.4.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/bootstrap.bundle.min.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/bootstrap.bundle.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.meanmenu.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/owl.carousel.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.appear.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/odometer.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.magnific-popup.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/TweenMax.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/ScrollMagic.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/aos.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.ajaxchimp.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('frontend_assets/js/form-validator.min.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.appear.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/odometer.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/TweenMax.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/ScrollMagic.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/aos.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/jquery.ajaxchimp.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend_assets/js/form-validator.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('frontend_assets/js/contact-form-script.js') }}"></script>
     <script type="text/javascript" src="{{ asset('frontend_assets/js/wow.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('frontend_assets/js/main.js') }}"></script>

@@ -5,12 +5,12 @@
                 <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <div class="widget-logo">
-                        <a href="index-2.html"><img src="assets/images/logo.png" alt="image"></a>
+                        <a href="{{ route('home')}}"><img src="assets/images/logo.png" alt="image"></a>
                     </div>
                     <p>To get exclusive updates and benefits.</p>
                     <form class="newsletter-form" data-bs-toggle="validator">
                         <input type="email" class="input-newsletter" placeholder="Enter email" name="EMAIL" required
-                            autocomplete="off">
+                            autocomplete="on">
                         <button type="submit" class="default-btn">Subscribe</button>
                         <div id="validator-newsletter" class="form-result"></div>
                     </form>
@@ -41,13 +41,11 @@
             <div class="col-lg-3 col-md-6">
                 <div class="single-footer-widget ps-5" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
                     data-aos-once="true">
-                    <h3>Company And Team</h3>
+                    <h3>Company</h3>
                     <ul class="quick-links">
-                        <li><a href="team.html">Company And Team</a></li>
-                        <li><a href="blog.html">News And Blog</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="help-center.html">Affiliates And Partnerships</a></li>
-                        <li><a href="about-us.html">Careers</a></li>
+                        <li><a href="{{ route('about')}}">About Us</a></li>
+                        <li><a href="{{ route('home')}}">Affiliates And Partnerships</a></li>
+                        <li><a href="{{ route('about')}}">Careers</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,11 +54,11 @@
                     data-aos-once="true">
                     <h3>Resources</h3>
                     <ul class="quick-links">
-                        <li><a href="help-center.html">Security</a></li>
-                        <li><a href="faq.html">FAQ's</a></li>
-                        <li><a href="help-center.html">Community</a></li>
+                        <li><a href="{{ route('help-center')}}">Security</a></li>
+                        <li><a href="{{ route('faq')}}">FAQ's</a></li>
+                        <li><a href="{{ route('help-center')}}">Community</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="{{ route('contact')}}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,3 +93,7 @@
         </div>
     </div>
 </footer>
+
+<div class="go-top">
+    <i class="ri-arrow-up-s-line"></i>
+</div>

@@ -7,12 +7,13 @@
             <div class="col-lg-6 col-md-6">
                 <div class="page-banner-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <h2>About Us</h2>
+                    <h2>Our Features</h2>
                     <ul>
                         <li>
                             <a href="{{ route('home')}}">Home</a>
                         </li>
-                        <li>About Us</li>
+
+                        <li>Features</li>
                     </ul>
                 </div>
             </div>
@@ -30,39 +31,7 @@
 </div>
 
 
-<div class="partner-area ptb-100">
-    <div class="container">
-        <div class="partner-title">
-            <h3>Used By 300k+ Businesses Of All Shapes And Sizes</h3>
-        </div>
-        <div class="partner-slides owl-carousel owl-theme">
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-1.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-2.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-3.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-4.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-5.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-6.png" alt="image"></a>
-            </div>
-        </div>
-        <div class="partner-optional-text">
-            <p>Medium-to-large Business? <span>Speak To Sales</span></p>
-        </div>
-    </div>
-</div>
-
-
-<div class="reliable-area pb-100">
+<div class="reliable-area ptb-100">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
@@ -181,39 +150,60 @@
 </div>
 
 
-<div class="paiement-area ptb-100">
+<div class="features-area ptb-100">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-                <div class="paiement-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+            <div class="col-lg-8 col-md-12">
+                <div class="features-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <span>Paiement Services Worldwide</span>
-                    <h3>Easily Grow Your Business Save More Money</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan congue tempus fringilla diam arcu. Venenatis nulla senectus
-                        risus sagittis.</p>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-md-6">
-                            <ul class="paiement-list">
-                                <li><i class="ri-check-line"></i> Reliable Online Payment</li>
-                                <li><i class="ri-check-line"></i> Low Transaction Fee</li>
-                                <li><i class="ri-check-line"></i> Affordable Security Packages</li>
-                            </ul>
+                    <span>Our Features</span>
+                    <h3>The Reliable, Cheap & Fastest Way To Send Money Abroad</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-features-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                            data-aos-once="true">
+                            <div class="icon-image">
+                                <img src="assets/images/features/icon-1.png" alt="image">
+                            </div>
+                            <div class="content">
+                                <h3>Faster And Cheaper</h3>
+                                <ul class="list">
+                                    <li><i class="ri-checkbox-circle-line"></i> Lorem neque, diam nim etus porta
+                                        viverra. pretium auctor ut nam sed.</li>
+                                    <li><i class="ri-checkbox-circle-line"></i> Adipiscing eliId neque, diam nim
+                                        etus porta viverra. pretium auctor nam sed.</li>
+                                    <li><i class="ri-checkbox-circle-line"></i> EliId neque, diam nim etus porta
+                                        viverra. pretium auctor ut nam sed.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <ul class="paiement-list">
-                                <li><i class="ri-check-line"></i> Best Networking</li>
-                                <li><i class="ri-check-line"></i> Secure Payment Service</li>
-                                <li><i class="ri-check-line"></i> Real Time Money Tracking</li>
-                            </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-features-card" data-aos="fade-down" data-aos-delay="50"
+                            data-aos-duration="500" data-aos-once="true">
+                            <div class="icon-image">
+                                <img src="assets/images/features/icon-2.png" alt="image">
+                            </div>
+                            <div class="content">
+                                <h3>Trusted & Secure</h3>
+                                <ul class="list">
+                                    <li><i class="ri-checkbox-circle-line"></i> Lorem neque, diam nim etus porta
+                                        viverra. pretium auctor ut nam sed.</li>
+                                    <li><i class="ri-checkbox-circle-line"></i> Adipiscing eliId neque, diam nim
+                                        etus porta viverra. pretium auctor nam sed.</li>
+                                    <li><i class="ri-checkbox-circle-line"></i> EliId neque, diam nim etus porta
+                                        viverra. pretium auctor ut nam sed.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="paiement-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+            <div class="col-lg-4 col-md-12">
+                <div class="features-vector-image" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <img src="assets/images/paiement.png" alt="image">
+                    <img src="assets/images/features/features-1.png" alt="image">
                 </div>
             </div>
         </div>
@@ -228,7 +218,7 @@
             <h2>Take The Stress Out Of Managing Property And Money</h2>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="single-benefits-card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="300"
                     data-aos-once="true">
                     <div class="benefits-content">
@@ -241,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="single-benefits-card" data-aos="fade-up" data-aos-delay="40" data-aos-duration="400"
                     data-aos-once="true">
                     <div class="benefits-content">
@@ -254,7 +244,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="single-benefits-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <div class="benefits-content">
@@ -267,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="single-benefits-card" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
                     data-aos-once="true">
                     <div class="benefits-content">
@@ -280,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="single-benefits-card" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700"
                     data-aos-once="true">
                     <div class="benefits-content">
@@ -293,7 +283,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="single-benefits-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                     data-aos-once="true">
                     <div class="benefits-content">
@@ -311,171 +301,133 @@
 </div>
 
 
-<div class="pricing-area pt-100 pb-75">
-    <div class="container">
-        <div class="section-title">
-            <span>Our Pricing Plan</span>
-            <h2>We Charge As Little As Possible. No Subscription Fee</h2>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-pricing-table" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
-                    data-aos-once="true">
-                    <div class="pricing-header">
-                        <h3>Basic</h3>
-                    </div>
-                    <div class="price">$15 <span>Per Monthly</span></div>
-                    <div class="pricing-btn">
-                        <a href="pricing.html" class="default-btn">Choose This Plan</a>
-                    </div>
-                    <ul class="features-list">
-                        <li><i class="ri-check-line"></i> Free Mobile & Online App</li>
-                        <li><i class="ri-check-line"></i> Online System</li>
-                        <li><i class="ri-check-line"></i> Data full Access</li>
-                        <li><i class="ri-check-line"></i> 1 Business Mastercard</li>
-                        <li><i class="ri-check-line"></i> International Payment</li>
-                        <li><i class="ri-check-line"></i> Support Unlimited</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-pricing-table" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
-                    data-aos-once="true">
-                    <div class="pricing-header">
-                        <h3>Standard</h3>
-                    </div>
-                    <div class="price">$70 <span>Per Monthly</span></div>
-                    <div class="pricing-btn">
-                        <a href="pricing.html" class="default-btn">Choose This Plan</a>
-                    </div>
-                    <ul class="features-list">
-                        <li><i class="ri-check-line"></i> Free Mobile & Online App</li>
-                        <li><i class="ri-check-line"></i> Online System</li>
-                        <li><i class="ri-check-line"></i> Data full Access</li>
-                        <li><i class="ri-check-line"></i> 1 Business Mastercard</li>
-                        <li><i class="ri-check-line"></i> International Payment</li>
-                        <li><i class="ri-check-line"></i> Support Unlimited</li>
-                    </ul>
-                    <div class="best-sale">Best Sale</div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-pricing-table" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700"
-                    data-aos-once="true">
-                    <div class="pricing-header">
-                        <h3>Premium</h3>
-                    </div>
-                    <div class="price">$99 <span>Per Monthly</span></div>
-                    <div class="pricing-btn">
-                        <a href="pricing.html" class="default-btn">Choose This Plan</a>
-                    </div>
-                    <ul class="features-list">
-                        <li><i class="ri-check-line"></i> Free Mobile & Online App</li>
-                        <li><i class="ri-check-line"></i> Online System</li>
-                        <li><i class="ri-check-line"></i> Data full Access</li>
-                        <li><i class="ri-check-line"></i> 1 Business Mastercard</li>
-                        <li><i class="ri-check-line"></i> International Payment</li>
-                        <li><i class="ri-check-line"></i> Support Unlimited</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="review-area bg-F4F5F5 ptb-100">
-    <div class="container">
-        <div class="section-title">
-            <span>Our Review</span>
-            <h2>More Than 4,405,28 Happy Customers Trust Our Services</h2>
-        </div>
-        <div class="review-slides-two owl-carousel owl-theme">
-            <div class="single-review-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
-                data-aos-once="true">
-                <ul class="review-rating">
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                </ul>
-                <p>Vitae cras leo tellus lectus non fusce tate nibh massa. Quis ut odio quam in lorem nam felis sed.
-                    Eleifend euismod vitae parturient libero. Magna in parturient congue aliquam egestas.</p>
-                <div class="review-info">
-                    <img src="assets/images/review/review-1.jpg" alt="image">
-                    <h3>Thomoson Piterson</h3>
-                    <span>Endemycon Leader</span>
-                </div>
-                <div class="reviewquote-image">
-                    <img src="assets/images/quote-icon.png" alt="image">
-                </div>
-            </div>
-            <div class="single-review-card" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
-                data-aos-once="true">
-                <ul class="review-rating">
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                    <li><i class="ri-star-line"></i></li>
-                </ul>
-                <p>Vitae cras leo tellus lectus non fusce tate nibh massa. Quis ut odio quam in lorem nam felis sed.
-                    Eleifend euismod vitae parturient libero. Magna in parturient congue aliquam egestas.</p>
-                <div class="review-info">
-                    <img src="assets/images/review/review-2.jpg" alt="image">
-                    <h3>Maxwel Warner</h3>
-                    <span>Endemycon Leader</span>
-                </div>
-                <div class="reviewquote-image">
-                    <img src="assets/images/quote-icon.png" alt="image">
-                </div>
-            </div>
-        </div>
-        <div class="review-optional-content">
-            <p>But don’t just take our word for it - check out what our customers have to say about their experience
-                with us: <b>Excellent</b> <span>Based on 25,454 reviews</span></p>
-        </div>
-    </div>
-    <div class="review-shape">
-        <img src="assets/images/review/shape-1.png" alt="image">
-    </div>
-    <div class="review-shape-2">
-        <img src="assets/images/review/shape-2.png" alt="image">
-    </div>
-</div>
-
-
-<div class="app-area ptb-100">
+<div class="security-area ptb-100">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
-                <div class="app-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
-                    data-aos-once="true">
-                    <span>Download Our Mobile App</span>
-                    <h3>You Can Find All The Thing You Need In Our Mobile App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan.</p>
-                    <div class="app-btn-box">
-                        <a href="#" class="appstore-btn" target="_blank">
-                            <i class="ri-apple-fill"></i>
-                            Download On
-                            <span>App Store</span>
-                        </a>
-                        <a href="#" class="google-btn" target="_blank">
-                            <i class="ri-google-line"></i>
-                            Download On
-                            <span>Google Play</span>
-                        </a>
+                <div class="security-image">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="security-wrap" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500"
+                                data-aos-once="true">
+                                <img src="assets/images/security/security-1.jpg" alt="image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="security-wrap mb-25" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="500" data-aos-once="true">
+                                <img src="assets/images/security/security-2.jpg" alt="image">
+                            </div>
+                            <div class="security-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                                data-aos-once="true">
+                                <img src="assets/images/security/security-3.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="security-shape" data-speed="0.08" data-revert="true">
+                        <img src="assets/images/security/shape-1.png" alt="image">
+                    </div>
+                    <div class="security-shape-2" data-speed="0.08" data-revert="true">
+                        <img src="assets/images/security/shape-2.png" alt="image">
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
-                <div class="app-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                <div class="security-content" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <img src="assets/images/app.png" alt="image">
-                    <div class="circle-pattern" data-aos="fade-down" data-aos-delay="70" data-aos-duration="700"
-                        data-aos-once="true"></div>
+                    <span>Security</span>
+                    <h3>Take The Stress Out Of Managing Property And Money</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl bibendum vitae
+                        consequat. Nisl ut sed accumsan congue id tempus fringilla diam arcu. Venenatis nulla
+                        senectus risus sagittis turpis felis egestas.</p>
+                    <div class="security-inner-box">
+                        <div class="icon">
+                            <i class="flaticon-shield"></i>
+                        </div>
+                        <h4>Pay Online Securely With Instant Notifications</h4>
+                        <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra pretium auctor ut nam sed.
+                        </p>
+                    </div>
+                    <div class="security-inner-box">
+                        <div class="icon">
+                            <i class="flaticon-secure-shield"></i>
+                        </div>
+                        <h4>Convert Your Money In Seconds</h4>
+                        <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra pretium auctor ut nam sed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="faq-area ptb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="faq-item" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+                    data-aos-once="true">
+                    <div class="faq-content">
+                        <span>Frequently Ask Questions</span>
+                        <h3>Let’s Answer Some Of Your Questions Or Frequently Asked Questions</h3>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="accordion" id="FaqAccordion">
+                            <div class="accordion-item">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What Is A Multi-Currency Account And How Does It Work?
+                                </button>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#FaqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
+                                            tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus
+                                            magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What Happened To The Borderless Account?
+                                </button>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#FaqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
+                                            tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus
+                                            magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Can I Hold Multiple Currencies In A Snuff Account?
+                                </button>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#FaqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
+                                            tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus
+                                            magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="faq-image" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+                    data-aos-once="true">
+                    <img src="assets/images/faq.png" alt="image">
                 </div>
             </div>
         </div>
@@ -507,62 +459,5 @@
         <img src="assets/images/overview/shape-2.png" alt="image">
     </div>
 </div>
-
-
-<div class="fun-fact-area pt-100 pb-75">
-    <div class="container">
-        <div class="section-title">
-            <span>Our Funfact</span>
-            <h2>We Always Try To Understand Customers Expectation</h2>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-sm-6 col-6">
-                <div class="single-funfact-box" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
-                    data-aos-once="true">
-                    <h3>
-                        <span class="odometer" data-count="180">00</span>
-                        <span class="small-text">K</span>
-                    </h3>
-                    <p>Downloaded</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6">
-                <div class="single-funfact-box" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
-                    data-aos-once="true">
-                    <h3>
-                        <span class="odometer" data-count="20">00</span>
-                        <span class="small-text">K</span>
-                    </h3>
-                    <p>Feedback</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6">
-                <div class="single-funfact-box" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700"
-                    data-aos-once="true">
-                    <h3>
-                        <span class="odometer" data-count="500">00</span>
-                        <span class="small-text">+</span>
-                    </h3>
-                    <p>Workers</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6">
-                <div class="single-funfact-box" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                    data-aos-once="true">
-                    <h3>
-                        <span class="odometer" data-count="100">00</span>
-                        <span class="small-text">+</span>
-                    </h3>
-                    <p>Contrubutors</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="go-top">
-    <i class="ri-arrow-up-s-line"></i>
-</div>
-
 
 @endsection
