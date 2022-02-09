@@ -114,10 +114,10 @@
                         </ul>
                         <div class="others-options d-flex align-items-center">
                             <div class="option-item">
-                                <a href="login.html" class="optional-btn">Log In</a>
+                                <a href="/login" class="optional-btn">Log In</a>
                             </div>
                             <div class="option-item">
-                                <a href="register.html" class="default-btn">Register Now</a>
+                                <a href="/register" class="default-btn">Register Now</a>
                             </div>
                         </div>
                     </div>

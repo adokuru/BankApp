@@ -2634,12 +2634,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Detection": "namespaced/"
-                },
                 "classmap": [
                     "Mobile_Detect.php"
-                ]
+                ],
+                "psr-0": {
+                    "Detection": "namespaced/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8371,12 +8371,12 @@
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "src/DeepCopy/deep_copy.php"
-                ],
                 "psr-4": {
                     "DeepCopy\\": "src/DeepCopy/"
-                }
+                },
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
