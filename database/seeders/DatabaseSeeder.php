@@ -3,9 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Database\Seeders\UserTableSeeder;
-use Database\Seeders\AutoPaymentGetwaySeeder;
-use Database\Seeders\OptionTableSeeder;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,10 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-            UserTableSeeder::class,
-            AutoPaymentGetwaySeeder::class,
-            OptionTableSeeder::class,
-       ]);
+        // \App\Models\User::factory(10)->create();
     }
 }

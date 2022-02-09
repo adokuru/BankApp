@@ -9,8 +9,6 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
-use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -19,7 +17,6 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
-    use HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -30,7 +27,6 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'role_id'
     ];
 
     /**
@@ -52,8 +48,6 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'phone_verified_at' => 'datetime',
-
     ];
 
     /**
@@ -64,54 +58,4 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-
-    public function userPhoneVerified()
-    {
-        return ! is_null($this->phone_verified_at);
-    }
-    public static function getpermissionGroups()
-    {
-        $permission_groups = DB::table('permissions')
-            ->select('group_name as name')
-            ->groupBy('group_name')
-            ->get();
-        return $permission_groups;
-    }
-
-    public static function getPermissionGroup()
-    {
-        return $permission_groups = DB::table('permissions')->select('group_name')->groupBy('group_name')->get();
-    }
-    public static function getpermissionsByGroupName($group_name)
-    {
-        $permissions = DB::table('permissions')
-            ->select('name', 'id')
-            ->where('group_name', $group_name)
-            ->get();
-        return $permissions;
-    }
-
-    public static function roleHasPermissions($role, $permissions)
-    {
-        $hasPermission = true;
-        foreach ($permissions as $permission) {
-            if (!$role->hasPermissionTo($permission->name)) {
-                $hasPermission = false;
-                return $hasPermission;
-            }
-        }
-        return $hasPermission;
-    }
-
-    // Relation to transactions Model
-    public function transactions() 
-    {
-        return $this->hasMany(Transaction::class, 'user_id', 'id');
-    }
-
-
-    public function deposit() {
-        return $this->hasMany(Deposit::class, 'user_id', 'id'); 
-    }
-
 }
