@@ -8,7 +8,7 @@
     @if (View::hasSection('seo'))
     @yield('seo')
     @else
-    <title>Snuff - Money Transfer & Banking HTML Template</title>
+    <title>Snuff - Swiss Banking Company</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="Banking , Loans, Transfer" />
     <meta name="description" content="" />
