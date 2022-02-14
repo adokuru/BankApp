@@ -12,6 +12,8 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="shortcut icon" href="{{ asset('frontend_assets/images/favicon.png') }}">
+
 
         @livewireStyles
 
