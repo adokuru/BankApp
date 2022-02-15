@@ -84,10 +84,10 @@
         <div class="container">
             <div class="copyright-area-content">
                 <p>
-                    Copyright © 2021 Snuff All Rights Reserved by
-                    <a href="https://hibootstrap.com/" target="_blank">
+                    Copyright © 2022 Snuff All Rights Reserved
+                    <!-- <a href="https://hibootstrap.com/" target="_blank">
                         HiBootstrap
-                    </a>
+                    </a> -->
                 </p>
             </div>
         </div>

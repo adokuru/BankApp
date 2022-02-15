@@ -311,7 +311,7 @@
 </div>
 
 
-<div class="pricing-area pt-100 pb-75">
+<!-- <div class="pricing-area pt-100 pb-75">
     <div class="container">
         <div class="section-title">
             <span>Our Pricing Plan</span>
@@ -381,10 +381,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
-<div class="review-area bg-F4F5F5 ptb-100">
+<!-- <div class="review-area bg-F4F5F5 ptb-100">
     <div class="container">
         <div class="section-title">
             <span>Our Review</span>
@@ -443,10 +443,10 @@
     <div class="review-shape-2">
         <img src="assets/images/review/shape-2.png" alt="image">
     </div>
-</div>
+</div> -->
 
 
-<div class="app-area ptb-100">
+<!-- <div class="app-area ptb-100">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
@@ -480,7 +480,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <div class="overview-area ptb-100">
