@@ -65,6 +65,7 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+<<<<<<< Updated upstream
     public function userPhoneVerified()
     {
         return ! is_null($this->phone_verified_at);
@@ -114,4 +115,10 @@ class User extends Authenticatable
         return $this->hasMany(Deposit::class, 'user_id', 'id'); 
     }
 
+=======
+    public function account()
+    {
+        return $this->hasOne(Account::class);
+    }
+>>>>>>> Stashed changes
 }

@@ -14,7 +14,8 @@ class AccountController extends Controller
     //
     public function home()
     {
-        return view('users.home');
+        $user = Auth::user();
+        return view('users.home', compact('user'));
     }
     public function activity()
     {
@@ -39,11 +40,13 @@ class AccountController extends Controller
     }
     public function profile()
     {
-        return view('users.profile');
+        $user = Auth::user();
+        return view('users.profile', compact('user'));
     }
     public function security()
     {
-        return view('users.secuirty');
+        $user = Auth::user();
+        return view('users.secuirty', compact('user'));
     }
     protected function createAgent($session)
     {

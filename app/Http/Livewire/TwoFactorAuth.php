@@ -72,9 +72,7 @@ class TwoFactorAuth extends Component
         if (Features::optionEnabled(Features::twoFactorAuthentication(), 'confirmPassword')) {
             $this->ensurePasswordIsConfirmed();
         }
-
         $generate(Auth::user());
-
         $this->showingRecoveryCodes = true;
     }
 
