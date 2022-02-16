@@ -50,6 +50,24 @@ class AccountController extends Controller
         $user = Auth::user();
         return view('users.secuirty', compact('user'));
     }
+    public function deposit()
+    {
+        $user = Auth::user();
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.deposit', compact('user', 'account'));
+    }
+    public function transfers()
+    {
+        $user = Auth::user();
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.transfers', compact('user', 'account'));
+    }
+    public function transactions()
+    {
+        $user = Auth::user();
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.transactions', compact('user', 'account'));
+    }
     protected function createAgent($session)
     {
         return tap(new Agent, function ($agent) use ($session) {
