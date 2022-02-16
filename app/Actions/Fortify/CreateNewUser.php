@@ -33,17 +33,7 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
         ]);
-        $rand = rand(10000000000, 99999999999);
-        Account::create([
-            'user_id' => $user->id,
-            'balance' => 0,
-            'account_number' => $rand,
-            'bank_identifier' => '00962',
-            'IBAN_Check_digits' => '88',
-            'iso' => 'CH',
-            'IBAN' => 'CH'.Account::IBAN_Check_digits.' '.'00962'.' '.$rand,
-        ]);
-
+       
         return $user;
     }
 }

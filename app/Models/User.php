@@ -65,60 +65,8 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-<<<<<<< Updated upstream
-    public function userPhoneVerified()
-    {
-        return ! is_null($this->phone_verified_at);
-    }
-    public static function getpermissionGroups()
-    {
-        $permission_groups = DB::table('permissions')
-            ->select('group_name as name')
-            ->groupBy('group_name')
-            ->get();
-        return $permission_groups;
-    }
-
-    public static function getPermissionGroup()
-    {
-        return $permission_groups = DB::table('permissions')->select('group_name')->groupBy('group_name')->get();
-    }
-    public static function getpermissionsByGroupName($group_name)
-    {
-        $permissions = DB::table('permissions')
-            ->select('name', 'id')
-            ->where('group_name', $group_name)
-            ->get();
-        return $permissions;
-    }
-
-    public static function roleHasPermissions($role, $permissions)
-    {
-        $hasPermission = true;
-        foreach ($permissions as $permission) {
-            if (!$role->hasPermissionTo($permission->name)) {
-                $hasPermission = false;
-                return $hasPermission;
-            }
-        }
-        return $hasPermission;
-    }
-
-    // Relation to transactions Model
-    public function transactions() 
-    {
-        return $this->hasMany(Transaction::class, 'user_id', 'id');
-    }
-
-
-    public function deposit() {
-        return $this->hasMany(Deposit::class, 'user_id', 'id'); 
-    }
-
-=======
     public function account()
     {
         return $this->hasOne(Account::class);
     }
->>>>>>> Stashed changes
 }
