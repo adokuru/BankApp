@@ -4,7 +4,7 @@
 <div class="main-banner-area">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-12" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+            <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                 data-aos-once="true">
                 <div class="main-banner-content">
                     <span>Simple. Quick. Secure.</span>
@@ -27,13 +27,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-6 col-md-12">
                 <div class="main-banner-image" data-speed="0.05" data-revert="true">
-                    <img src="{{asset('frontend_assets/images/main-banner/banner-women.png')}}" alt="image"
-                        data-aos="fade-down" data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
+                    <img src="{{asset('frontend_assets/images/main-banner/1.png')}}" alt="image" data-aos="fade-down"
+                        data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+            <!-- <div class="col-lg-4 col-md-12" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
                 data-aos-once="true">
                 <form class="money-transfer-form">
                     <div class="amount-currency-total-content">
@@ -209,14 +209,14 @@
                         </ul>
                     </div>
                 </form>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="main-banner-shape" data-speed="0.08" data-revert="true">
-        <img src="assets/images/main-banner/shape-1.png" alt="image">
+        <img src="{{asset('frontend_assets/images/main-banner/shape-1.png')}}" alt="image">
     </div>
     <div class="main-banner-shape-2" data-speed="0.08" data-revert="true">
-        <img src="assets/images/main-banner/shape-2.png" alt="image">
+        <img src="{{asset('frontend_assets/images/main-banner/shape-2.png')}}" alt="image">
     </div>
 </div>
 
@@ -232,7 +232,7 @@
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-1.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-1.png')}}" alt="image">
                     </div>
                     <h3>1. Create Account</h3>
                     <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
@@ -242,7 +242,7 @@
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-2.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-2.png')}}" alt="image">
                     </div>
                     <h3>2. Verify Identity</h3>
                     <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
@@ -252,7 +252,7 @@
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-3.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-3.png')}}" alt="image">
                     </div>
                     <h3>3. Tap Your Account</h3>
                     <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
@@ -262,7 +262,7 @@
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-4.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-4.png')}}" alt="image">
                     </div>
                     <h3>4. Confirm & Send</h3>
                     <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
@@ -306,13 +306,13 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="choose-image" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
-                                <img src="assets/images/why-choose-us/choose-1.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/2.jpeg')}}" alt="image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="choose-image mb-25" data-aos="fade-left" data-aos-delay="50"
                                 data-aos-duration="500" data-aos-once="true">
-                                <img src="assets/images/why-choose-us/choose-2.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/3.jpeg')}}" alt="image">
                             </div>
                             <div class="choose-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
@@ -321,10 +321,10 @@
                         </div>
                     </div>
                     <div class="choose-shape" data-speed="0.08" data-revert="true">
-                        <img src="assets/images/why-choose-us/shape-1.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/why-choose-us/shape-1.png')}}" alt="image">
                     </div>
                     <div class="choose-shape-2" data-speed="0.08" data-revert="true">
-                        <img src="assets/images/why-choose-us/shape-2.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/why-choose-us/shape-2.png')}}" alt="image">
                     </div>
                 </div>
             </div>
@@ -333,7 +333,7 @@
 </div>
 
 
-<div class="compare-pricing-area pb-100">
+<!-- <div class="compare-pricing-area pb-100">
     <div class="container">
         <div class="section-title">
             <span>Compare Our Pricing</span>
@@ -418,7 +418,7 @@
             </table>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <div class="security-area ptb-100">
@@ -430,25 +430,25 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="security-wrap" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
-                                <img src="assets/images/security/security-1.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/security/security-1.jpg')}}" alt="image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="security-wrap mb-25" data-aos="fade-left" data-aos-delay="50"
                                 data-aos-duration="500" data-aos-once="true">
-                                <img src="assets/images/security/security-2.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/4.jpg')}}" alt="image">
                             </div>
                             <div class="security-wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
-                                <img src="assets/images/security/security-3.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/security/security-3.jpg')}}" alt="image">
                             </div>
                         </div>
                     </div>
                     <div class="security-shape" data-speed="0.08" data-revert="true">
-                        <img src="assets/images/security/shape-1.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/security/shape-1.png')}}" alt="image">
                     </div>
                     <div class="security-shape-2" data-speed="0.08" data-revert="true">
-                        <img src="assets/images/security/shape-2.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/security/shape-2.png')}}" alt="image">
                     </div>
                 </div>
             </div>
@@ -497,7 +497,7 @@
                         <div class="single-features-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                             data-aos-once="true">
                             <div class="icon-image">
-                                <img src="assets/images/features/icon-1.png" alt="image">
+                                <img src="{{asset('frontend_assets/images/features/icon-1.png')}}" alt="image">
                             </div>
                             <div class="content">
                                 <h3>Faster And Cheaper</h3>
@@ -516,7 +516,7 @@
                         <div class="single-features-card" data-aos="fade-down" data-aos-delay="50"
                             data-aos-duration="500" data-aos-once="true">
                             <div class="icon-image">
-                                <img src="assets/images/features/icon-2.png" alt="image">
+                                <img src="{{asset('frontend_assets/images/features/icon-2.png')}}" alt="image">
                             </div>
                             <div class="content">
                                 <h3>Trusted & Secure</h3>
@@ -536,7 +536,7 @@
             <div class="col-lg-4 col-md-12">
                 <div class="features-vector-image" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <img src="assets/images/features/features-1.png" alt="image">
+                    <img src="{{asset('frontend_assets/images/features/features-1.png')}}" alt="image">
                 </div>
             </div>
         </div>
@@ -544,7 +544,7 @@
 </div>
 
 
-<div class="coverage-area pt-100 pb-75">
+<!-- <div class="coverage-area pt-100 pb-75">
     <div class="container">
         <div class="section-title">
             <span>We Are Covering</span>
@@ -655,10 +655,10 @@
     <div class="coverage-shape-2">
         <img src="assets/images/coverage/shape-2.png" alt="image">
     </div>
-</div>
+</div> -->
 
 
-<div class="review-area ptb-100">
+<!-- <div class="review-area ptb-100">
     <div class="container">
         <div class="section-title">
             <span>Our Review</span>
@@ -677,7 +677,7 @@
                 <p>Vitae cras leo tellus lectus non fusce tate nibh massa. Quis ut odio quam in lorem nam felis sed.
                     Eleifend euismod vitae parturient libero. Magna in parturient congue aliquam egestas.</p>
                 <div class="reviewquote-image">
-                    <img src="assets/images/quote-icon.png" alt="image">
+                    <img src="{{asset('frontend_assets/images/quote-icon.png')}}" alt="image">
                 </div>
                 <div class="review-info">
                     <h3>Thomoson Piterson</h3>
@@ -696,7 +696,7 @@
                 <p>Vitae cras leo tellus lectus non fusce tate nibh massa. Quis ut odio quam in lorem nam felis sed.
                     Eleifend euismod vitae parturient libero. Magna in parturient congue aliquam egestas.</p>
                 <div class="reviewquote-image">
-                    <img src="assets/images/quote-icon.png" alt="image">
+                    <img src="{{asset('frontend_assets/images/quote-icon.png')}}" alt="image">
                 </div>
                 <div class="review-info">
                     <h3>Maxwel Warner</h3>
@@ -715,7 +715,7 @@
                 <p>Vitae cras leo tellus lectus non fusce tate nibh massa. Quis ut odio quam in lorem nam felis sed.
                     Eleifend euismod vitae parturient libero. Magna in parturient congue aliquam egestas.</p>
                 <div class="reviewquote-image">
-                    <img src="assets/images/quote-icon.png" alt="image">
+                    <img src="{{asset('frontend_assets/images/quote-icon.png')}}" alt="image">
                 </div>
                 <div class="review-info">
                     <h3>John Terry</h3>
@@ -728,7 +728,7 @@
                 with us: <b>Excellent</b> <span>Based on 25,454 reviews</span></p>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <div class="overview-area ptb-100">
@@ -763,7 +763,7 @@
             <div class="col-lg-6 col-md-12">
                 <div class="faq-image" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <img src="assets/images/faq.png" alt="image">
+                    <img src="{{asset('frontend_assets/images/faq.png')}}" alt="image">
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
