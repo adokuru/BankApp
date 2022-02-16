@@ -18,6 +18,7 @@ class AccountController extends Controller
         $user = Auth::user();
         $account = Account::where('user_id', $user->id)->first();
         return view('users.home', compact('user', 'account'));
+
     }
     public function activity()
     {

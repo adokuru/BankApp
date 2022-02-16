@@ -23,10 +23,9 @@ class CreateAccountsTable extends Migration
             $table->string('iso')->default('CH');
             $table->string('IBAN')->nullable();
             $table->timestamps();
-              
             $table->foreign('user_id')
             ->references('id')->on('users')
-            ->onDelete('cascade'); 
+            ->onDelete('cascade');
         });
     }
 
