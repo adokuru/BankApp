@@ -45,8 +45,8 @@
                                  <div class="user-email">
                                     <div class="user">
                                        <div class="user-info">
-                                          <h5>{{user()->name}}</h5>
-                                          <span>{{user()->email}}</span>
+                                          <h5>{{auth()->user()->name}}</h5>
+                                          <span>{{auth()->user()->email}}</span>
                                        </div>
                                     </div>
                                  </div>
