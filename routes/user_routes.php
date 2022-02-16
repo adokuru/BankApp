@@ -8,4 +8,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/account/profile', [AccountController::class, 'profile'])->name('Account_profile');
     Route::get('/account/security', [AccountController::class, 'security'])->name('Account_security');
     Route::get('/account/activity', [AccountController::class, 'activity'])->name('Account_activity');
+    Route::get('/account/deposit', [AccountController::class, 'deposit'])->name('Account_deposit');
+    Route::get('/account/transfers', [AccountController::class, 'transfers'])->name('Account_transfers');
+    Route::get('/account/transactions', [AccountController::class, 'transactions'])->name('Account_transactions');
 });

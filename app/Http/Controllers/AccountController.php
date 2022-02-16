@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Account;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Session\Middleware\AuthenticateSession;
@@ -15,7 +16,9 @@ class AccountController extends Controller
     public function home()
     {
         $user = Auth::user();
-        return view('users.home', compact('user'));
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.home', compact('user', 'account'));
+
     }
     public function activity()
     {
@@ -47,6 +50,24 @@ class AccountController extends Controller
     {
         $user = Auth::user();
         return view('users.secuirty', compact('user'));
+    }
+    public function deposit()
+    {
+        $user = Auth::user();
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.deposit', compact('user', 'account'));
+    }
+    public function transfers()
+    {
+        $user = Auth::user();
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.transfers', compact('user', 'account'));
+    }
+    public function transactions()
+    {
+        $user = Auth::user();
+        $account = Account::where('user_id', $user->id)->first();
+        return view('users.transactions', compact('user', 'account'));
     }
     protected function createAgent($session)
     {

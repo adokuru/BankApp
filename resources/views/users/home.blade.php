@@ -31,31 +31,31 @@
                    <div class="col-12">
                       <div class="total-balance">
                          <p>Total Balance</p>
-                         <h2>$221,478</h2>
+                         <h2>${{number_format($account->balance, 2)}}</h2>
                       </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                       <div class="balance-stats active">
                          <p>Last Month</p>
-                         <h3>$42,678</h3>
+                         <h3>${{number_format($account->balance, 2)}}</h3>
                       </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                       <div class="balance-stats">
-                         <p>Expenses</p>
-                         <h3>$1,798</h3>
+                         <p>Debit</p>
+                         <h3>${{number_format($account->balance, 2)}}</h3>
                       </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                       <div class="balance-stats">
-                         <p>Taxes</p>
-                         <h3>$255.25</h3>
+                         <p>Credit</p>
+                         <h3>${{number_format($account->balance, 2)}}</h3>
                       </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                       <div class="balance-stats">
-                         <p>Debt</p>
-                         <h3>$365,478</h3>
+                        <p>Depoist</p>
+                        <a>click here</a>
                       </div>
                    </div>
                 </div>

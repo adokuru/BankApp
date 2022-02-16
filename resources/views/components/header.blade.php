@@ -28,16 +28,13 @@
                             </button>
                             <div class="dropdown-menu language-dropdown-menu">
                                 <a class="dropdown-item" href="#">
-                                    <img src="assets/images/uk.png" alt="flag">
                                     English
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <img src="assets/images/china.png" alt="flag">
-                                    简体中文
+                                    French
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <img src="assets/images/uae.png" alt="flag">
-                                    العربيّة
+                                    German
                                 </a>
                             </div>
                         </li>
@@ -63,7 +60,7 @@
         <div class="main-navbar">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index-2.html">
+                    <a class="navbar-brand" href="/">
                         <img src="assets/images/logo.png" alt="Oleev">
                     </a>
                     <div class="navbar-list">
@@ -111,7 +108,7 @@
                         <div class="others-options d-flex align-items-center">
                             @if (Auth::check())
                                 <div class="option-item">
-                                    <a href="{{route('Account_home')}}" class="default-btn">Manage Account</a>
+                                    <a href="{{ route('Account_home') }}" class="default-btn">Manage Account</a>
                                 </div>
                                 <div class="option-item">
 
@@ -149,7 +146,7 @@
                         <div class="others-options d-flex align-items-center">
                             @if (Auth::check())
                                 <div class="option-item">
-                                    <a href="{{route('Account_home')}}" class="default-btn">Manage Account</a>
+                                    <a href="{{ route('Account_home') }}" class="default-btn">Manage Account</a>
                                 </div>
                                 <div class="option-item">
                                     <form method="POST" action="{{ route('logout') }}">
