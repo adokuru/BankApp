@@ -20,9 +20,9 @@
             </div>
             <div class="col-xxl-12 col-xl-12">
                 <div class="settings-menu">
-                    <a href="{{route('Account_profile')}}">Profile</a>
-                    <a href="{{route('Account_security')}}">Security</a>
-                    <a href="{{route('Account_activity')}}">Activity</a>
+                    <a href="{{ route('Account_profile') }}">Profile</a>
+                    <a href="{{ route('Account_security') }}">Security</a>
+                    <a href="{{ route('Account_activity') }}">Activity</a>
                 </div>
                 <div class="row">
                     <div class="col-xxl-6 col-xl-6 col-lg-6">
@@ -35,14 +35,14 @@
                                     <div class="row g-3">
                                         <div class="col-xxl-12 col-12 mb-3">
                                             <label class="form-label">Full Name</label>
-                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input type="text" class="form-control" placeholder="{{ $user->name }}" value="{{ $user->name }}">
                                         </div>
                                         <div class="col-xxl-12 col-12 mb-3">
                                             <div class="d-flex align-items-center">
-                                                <img class="me-3 rounded-circle me-0 me-sm-3" src="images/profile/3.png" width="55" height="55" alt="">
+                                                <img class="me-3 rounded-circle me-0 me-sm-3" src="/frontend_assets/images/profile/3.png" width="55" height="55" alt="">
                                                 <div class="media-body">
-                                                    <h4 class="mb-0">Jannatul Maowa</h4>
-                                                    <p class="mb-0">Max file size is 20mb
+                                                    <h4 class="mb-0">{{ $user->name }}</h4>
+                                                    <p class="mb-0">Max file size is 5mb
                                                     </p>
                                                 </div>
                                             </div>
@@ -74,11 +74,15 @@
                                     <div class="row g-3">
                                         <div class="col-12 mb-3">
                                             <label class="form-label">New Email</label>
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="email" class="form-control" placeholder="Email" value="{{ $user->email }}" disabled>
                                         </div>
                                         <div class="col-12 mb-3">
+                                            <h4 class="card-title">Change Password</h4>
+                                            <br />
                                             <label class="form-label">New Password</label>
-                                            <input type="password" class="form-control" placeholder="**********">
+                                            <input type="password" class="form-control" placeholder="**********" name="password">
+                                            <label class="form-label">Confirm New Password</label>
+                                            <input type="password" class="form-control" placeholder="**********" name="confirm_password">
                                             <small class="mt-2 mb-0 d-block">Enable two factor authencation
                                                 on the
                                                 security
@@ -101,14 +105,6 @@
                             <div class="card-body">
                                 <form method="post" name="myform" class="personal_validate" novalidate="novalidate">
                                     <div class="row g-4">
-                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <label class="form-label">Full Name</label>
-                                            <input type="text" class="form-control" placeholder="Jannatul Maowa" name="fullname">
-                                        </div>
-                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <label class="form-label">Email</label>
-                                            <input type="email" class="form-control" placeholder="Hello@example.com" name="email">
-                                        </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
                                             <label class="form-label">Address</label>
                                             <input type="text" class="form-control" placeholder="123, Central Square, Brooklyn" name="permanentaddress">
@@ -448,7 +444,6 @@
                                                 </option>
                                             </select>
                                         </div>
-
                                         <div class="col-12">
                                             <button class="btn btn-primary pl-5 pr-5">Save</button>
                                         </div>
