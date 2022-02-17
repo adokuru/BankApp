@@ -69,6 +69,11 @@ class AccountController extends Controller
         $account = Account::where('user_id', $user->id)->first();
         return view('users.transactions', compact('user', 'account'));
     }
+    public function twofa()
+    {
+        $user = Auth::user();
+        return view('auth.setTwoFactor', compact('user'));
+    }
     protected function createAgent($session)
     {
         return tap(new Agent, function ($agent) use ($session) {

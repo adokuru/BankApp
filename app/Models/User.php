@@ -79,4 +79,8 @@ class User extends Authenticatable
     {
         return $this->hasOne(Account::class);
     }
+    public function hasTwoFactor()
+    {
+        return $this->two_factor_secret != null;
+    }
 }
