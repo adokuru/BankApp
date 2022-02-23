@@ -97,7 +97,7 @@
             <div class="col-lg-6 col-md-12">
                 <div class="reliable-content with-padding-left" data-aos="fade-left" data-aos-delay="50"
                     data-aos-duration="500" data-aos-once="true">
-                    <span>Reliable Online Payment Platform</span>
+                    <span>Reliable Secured Personal & Business Accounts</span>
                     <h3>Transfer & Deposite Money Anytime, Anywhere In The World</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Volutpat nisl bibendum vitae
                         consequat. Nisl ut sed accumsan congue tempus fringilla diam arcu. Venenatis nulla senectus

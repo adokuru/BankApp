@@ -9,7 +9,10 @@
                             <a href="tel:44789289524329">+44 7892 8952 4329</a>
                         </li>
                         <li>
-                            <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#492a26273d282a3d0920272f26672a2624"><span class="__cf_email__" data-cfemail="53203d26353513343e323a3f7d303c3e">[email&#160;protected]</span></a>
+                            <a
+                                href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#492a26273d282a3d0920272f26672a2624"><span
+                                    class="__cf_email__"
+                                    data-cfemail="53203d26353513343e323a3f7d303c3e">[email&#160;protected]</span></a>
                         </li>
                     </ul>
                 </div>
@@ -22,7 +25,8 @@
                             <a href="{{ route('help-center') }}">Help</a>
                         </li>
                         <li class="dropdown language-option">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
                                 <i class="ri-global-line"></i>
                                 <span class="lang-name"></span>
                             </button>
@@ -107,25 +111,25 @@
                         </ul>
                         <div class="others-options d-flex align-items-center">
                             @if (Auth::check())
-                                <div class="option-item">
-                                    <a href="{{ route('Account_home') }}" class="default-btn">Manage Account</a>
-                                </div>
-                                <div class="option-item">
+                            <div class="option-item">
+                                <a href="{{ route('Account_home') }}" class="default-btn">Manage Account</a>
+                            </div>
+                            <div class="option-item">
 
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                                        <a class="optional-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <a class="optional-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                                            {{ __('Log Out') }}</a>
-                                    </form>
-                                </div>
+                                        {{ __('Log Out') }}</a>
+                                </form>
+                            </div>
                             @else
-                                <div class="option-item">
-                                    <a href="/login" class="optional-btn">Log In</a>
-                                </div>
-                                <div class="option-item">
-                                    <a href="/register" class="default-btn">Register Now</a>
-                                </div>
+                            <div class="option-item">
+                                <a href="/login" class="optional-btn">Log In</a>
+                            </div>
+                            <div class="option-item">
+                                <a href="/register" class="default-btn">Register Now</a>
+                            </div>
                             @endif
                         </div>
                     </div>
@@ -145,24 +149,24 @@
                     <div class="option-inner">
                         <div class="others-options d-flex align-items-center">
                             @if (Auth::check())
-                                <div class="option-item">
-                                    <a href="{{ route('Account_home') }}" class="default-btn">Manage Account</a>
-                                </div>
-                                <div class="option-item">
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                                        <a class="optional-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
+                            <div class="option-item">
+                                <a href="{{ route('Account_home') }}" class="default-btn">Manage Account</a>
+                            </div>
+                            <div class="option-item">
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <a class="optional-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                                            {{ __('Log Out') }}</a>
-                                    </form>
-                                </div>
+                                        {{ __('Log Out') }}</a>
+                                </form>
+                            </div>
                             @else
-                                <div class="option-item">
-                                    <a href="/login" class="optional-btn">Log In</a>
-                                </div>
-                                <div class="option-item">
-                                    <a href="/register" class="default-btn">Register Now</a>
-                                </div>
+                            <div class="option-item">
+                                <a href="/login" class="optional-btn">Log In</a>
+                            </div>
+                            <div class="option-item">
+                                <a href="/register" class="default-btn">Register Now</a>
+                            </div>
                             @endif
                         </div>
                     </div>

@@ -8,11 +8,14 @@
                 data-aos-once="true">
                 <div class="main-banner-content">
                     <span>Simple. Quick. Secure.</span>
-                    <h1>Transfer Money Across World In Real Time</h1>
-                    <p>An international account to send money to over 60 countries around the world, up to 7x
-                        cheaper the bank. <a href="about-us.html">Learn more</a></p>
+                    <h1>Get a Secured Personal and Business Account </h1>
+                    <p>We offer high quality, sophisticated, personal and business solutions founded on a long tradition
+                        of
+                        wealth and asset management, infused with an entrepreneurial and business spirit.
+                        <!--  , to 7x
+                        Faster and secured. <a href="about-us.html">Learn more</a></p> -->
                     <div class="banner-btn">
-                        <a href="contact.html" class="default-btn">Send Now</a>
+                        <a href="contact.html" class="default-btn">Get Started</a>
                     </div>
                     <ul class="trust-content">
                         <li>
@@ -225,7 +228,7 @@
     <div class="container">
         <div class="section-title">
             <span>Getting Started</span>
-            <h2>Get Set Up And Start Spending With Your Card In Minutes</h2>
+            <h2>Get Set Up And Start In Minutes</h2>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-3 col-sm-6">
@@ -235,7 +238,8 @@
                         <img src="{{asset('frontend_assets/images/getting-started/getting-1.png')}}" alt="image">
                     </div>
                     <h3>1. Create Account</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <p>Choose a Personal or Business account and start in Minutes. Click on the "Get started"
+                        Button and follow the prompt</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -245,7 +249,8 @@
                         <img src="{{asset('frontend_assets/images/getting-started/getting-2.png')}}" alt="image">
                     </div>
                     <h3>2. Verify Identity</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <p>Once you choose an Account solution, you will be prompted to upload a means of Identification to
+                        verify your identity.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -254,8 +259,9 @@
                     <div class="getting-image">
                         <img src="{{asset('frontend_assets/images/getting-started/getting-3.png')}}" alt="image">
                     </div>
-                    <h3>3. Tap Your Account</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <h3>3. Activate Your Account</h3>
+                    <p>You will get a Notification mail, telling you to verify your account, with an option to recieve a
+                        physical or virtual card. </p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -265,7 +271,8 @@
                         <img src="{{asset('frontend_assets/images/getting-started/getting-4.png')}}" alt="image">
                     </div>
                     <h3>4. Confirm & Send</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <p>Once you have choosen a card type, you will be prompted to
+                        add your address to recieve a physical card.</p>
                 </div>
             </div>
         </div>
@@ -280,22 +287,23 @@
                 <div class="why-choose-us-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <span>Why Choose Us</span>
-                    <h3>Moving And Living Abroad Just Got Simpler Get Paid Like A Local</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan congue id tempus fringilla diam arcu. Venenatis nulla
-                        senectus risus sagittis turpis felis egestas.</p>
+                    <h3>Private and Secured Banking</h3>
+                    <p>We are combining the long-standing Swiss Private Banking traditions with a pro-active
+                        entrepreneurial mindset. This alchemy results in what we call Modern Private Bankers, where
+                        agility, integrity and enthusiasm meet in a boutique-sized structure. It is our ambition to
+                        benefit from that to offer “best in class” services.</p>
                     <ul class="choose-us-list">
                         <li>
                             <i class="ri-checkbox-circle-line"></i>
-                            Send money cheaper and easier than old-school banks.
+                            Open a secured and private account in minutes.
                         </li>
                         <li>
                             <i class="ri-checkbox-circle-line"></i>
-                            Spend abroad without the hidden fees.
+                            Get the best intrest rates on loans and mortgages.
                         </li>
                         <li>
                             <i class="ri-checkbox-circle-line"></i>
-                            Move money between countries for salary & more.
+                            24/7 state of the art personalised customer support services.
                         </li>
                     </ul>
                 </div>
@@ -457,23 +465,24 @@
                     data-aos-once="true">
                     <span>Security</span>
                     <h3>Take The Stress Out Of Managing Property And Money</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan congue id tempus fringilla diam arcu. Venenatis nulla
-                        senectus risus sagittis turpis felis egestas.</p>
+                    <p>We work closely with you to fully understand your investment objectives, risk sensitivity, tax
+                        requirements and cash-flow needs. When developing your financial wealth plan, we take a holistic
+                        approach to understand your full financial aspirations. By analyzing the complete picture, our
+                        team of specialists are able to provide you with a 360° plan to help you achieve your goals.</p>
                     <div class="security-inner-box">
                         <div class="icon">
                             <i class="flaticon-shield"></i>
                         </div>
                         <h4>Pay Online Securely With Instant Notifications</h4>
-                        <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra pretium auctor ut nam sed.
+                        <p>We pride our selves in giving highly secured transaction and baking solutions.
                         </p>
                     </div>
                     <div class="security-inner-box">
                         <div class="icon">
                             <i class="flaticon-secure-shield"></i>
                         </div>
-                        <h4>Convert Your Money In Seconds</h4>
-                        <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra pretium auctor ut nam sed.
+                        <h4>Send Money Borders</h4>
+                        <p>Send money securely across the borders, in mintues, without any hidden charges.
                         </p>
                     </div>
                 </div>
@@ -490,7 +499,7 @@
                 <div class="features-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <span>Our Features</span>
-                    <h3>The Reliable, Cheap & Fastest Way To Send Money Abroad</h3>
+                    <h3>The Reliable, Fastest & Secured Way To Own a Personal or Business Account</h3>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-6">
@@ -500,14 +509,19 @@
                                 <img src="{{asset('frontend_assets/images/features/icon-1.png')}}" alt="image">
                             </div>
                             <div class="content">
-                                <h3>Faster And Cheaper</h3>
+                                <h3>We Provide State Of The Act Solutions</h3>
                                 <ul class="list">
-                                    <li><i class="ri-checkbox-circle-line"></i> Lorem neque, diam nim etus porta
-                                        viverra. pretium auctor ut nam sed.</li>
-                                    <li><i class="ri-checkbox-circle-line"></i> Adipiscing eliId neque, diam nim
-                                        etus porta viverra. pretium auctor nam sed.</li>
-                                    <li><i class="ri-checkbox-circle-line"></i> EliId neque, diam nim etus porta
-                                        viverra. pretium auctor ut nam sed.</li>
+                                    <li><i class="ri-checkbox-circle-line"></i><b> Personal Solutions:</b> We are
+                                        combining the long-standing Swiss Private Banking traditions with a pro-active
+                                        personalized mindset.
+                                    </li>
+                                    <li><i class="ri-checkbox-circle-line"></i><b> Business Solutions and Asset
+                                            Management:</b> We are Swiss through and through. Excellence and reliability
+                                        are the values guiding our client relations and business activities.
+                                    </li>
+                                    <li><i class="ri-checkbox-circle-line"></i><b> Customized Solutions:</b> Wealth is
+                                        personal. That is why we always customise our solutions to our clients’ needs.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -521,12 +535,14 @@
                             <div class="content">
                                 <h3>Trusted & Secure</h3>
                                 <ul class="list">
-                                    <li><i class="ri-checkbox-circle-line"></i> Lorem neque, diam nim etus porta
-                                        viverra. pretium auctor ut nam sed.</li>
-                                    <li><i class="ri-checkbox-circle-line"></i> Adipiscing eliId neque, diam nim
-                                        etus porta viverra. pretium auctor nam sed.</li>
-                                    <li><i class="ri-checkbox-circle-line"></i> EliId neque, diam nim etus porta
-                                        viverra. pretium auctor ut nam sed.</li>
+                                    <li><i class="ri-checkbox-circle-line"></i> We provide highly Secured & trusted
+                                        business and personal accounts for our clients.
+                                    </li>
+                                    <li><i class="ri-checkbox-circle-line"></i> We pride our selves, with our state of
+                                        the act technology and
+                                        authentication system that will keep your money and transactions secured</li>
+                                    <li><i class="ri-checkbox-circle-line"></i> We take no one’s trust for granted, and
+                                        we manage client assets with the utmost care and respect.</li>
                                 </ul>
                             </div>
                         </div>
@@ -628,7 +644,7 @@
                     data-aos-once="true">
                     <div class="content">
                         <div class="coverage-image">
-                            <img src="assets/images/coverage/coverage-7.png" alt="image">
+                            <img src="assets/images/coverage/coverage-state of the art.png" alt="image">
                         </div>
                         <h3>Canadian Dollar</h3>
                         <p>Adipiscing eliId nque, diraam nim etus porta vierra.</p>
@@ -736,8 +752,9 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
-                Simple Solution.</h3>
+            <h3> Are You Looking For Where You Can Open a Secured & Relaible Offshore, Personal, or Business Account?
+                Manx Capitale Privée Banque is Your Fast And
+                Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
                     <a href="help-center.html" class="default-btn">Personal Account</a>
