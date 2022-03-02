@@ -12,7 +12,6 @@
                         <li>
                             <a href="index-2.html">Home</a>
                         </li>
-                        <li>Pages</li>
                         <li>Terms of Service</li>
                     </ul>
                 </div>
@@ -96,8 +95,8 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
-                Simple Solution.</h3>
+            <h3>Open a Secured & Relaible Offshore, Personal, or Business Account?
+                Manx Capitale Privée Banque is Your Fast And Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
                     <a href="help-center.html" class="default-btn">Personal Account</a>
@@ -109,10 +108,10 @@
         </div>
     </div>
     <div class="overview-shape">
-        <img src="assets/images/overview/shape-1.png" alt="image">
+        <img src="{{asset('frontend_assets/images/overview/shape-1.png')}}" alt="image">
     </div>
     <div class="overview-shape-2">
-        <img src="assets/images/overview/shape-2.png" alt="image">
+        <img src="{{asset('frontend_assets/images/overview/shape-2.png')}}" alt="image">
     </div>
 </div>
 

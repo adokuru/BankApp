@@ -29,38 +29,13 @@
     </div>
 </div>
 
-
 <div class="partner-area ptb-100">
     <div class="container">
-        <div class="partner-title">
-            <h3>Used By 300k+ Businesses Of All Shapes And Sizes</h3>
-        </div>
-        <div class="partner-slides owl-carousel owl-theme">
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-1.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-2.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-3.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-4.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-5.png" alt="image"></a>
-            </div>
-            <div class="partner-image">
-                <a href="about-us.html"><img src="assets/images/partner/partner-6.png" alt="image"></a>
-            </div>
-        </div>
         <div class="partner-optional-text">
             <p>Medium-to-large Business? <span>Speak To Sales</span></p>
         </div>
     </div>
 </div>
-
 
 <div class="reliable-area pb-100">
     <div class="container">
@@ -72,25 +47,25 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="wrap-image" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
-                                <img src="assets/images/reliable/reliable-1.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/2.jpeg')}}" alt="image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="wrap-image mb-25" data-aos="fade-down" data-aos-delay="50"
                                 data-aos-duration="500" data-aos-once="true">
-                                <img src="assets/images/reliable/reliable-2.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/3.jpeg')}}" alt="image">
                             </div>
                             <div class="wrap-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
-                                <img src="assets/images/reliable/reliable-3.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/reliable/reliable-3.jpg')}}" alt="image">
                             </div>
                         </div>
                     </div>
                     <div class="reliable-shape">
-                        <img src="assets/images/reliable/shape-2.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/reliable/shape-2.png')}}" alt="image">
                     </div>
                     <div class="reliable-shape-2">
-                        <img src="assets/images/reliable/shape-1.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/reliable/shape-1.png')}}" alt="image">
                     </div>
                 </div>
             </div>
@@ -98,14 +73,15 @@
                 <div class="reliable-content with-padding-left" data-aos="fade-left" data-aos-delay="50"
                     data-aos-duration="500" data-aos-once="true">
                     <span>Reliable Secured Personal & Business Accounts</span>
-                    <h3>Transfer & Deposite Money Anytime, Anywhere In The World</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan congue tempus fringilla diam arcu. Venenatis nulla senectus
-                        risus sagittis.</p>
+                    <h3>Own a Reliable & Secured Personal or Business Account</h3>
+                    <p>We are combining the long-standing Swiss Private Banking traditions with a pro-active
+                        entrepreneurial mindset. It is our ambition to
+                        benefit from that to offer “best in class” services.</p>
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6">
                             <ul class="reliable-list">
-                                <li><i class="ri-check-line"></i> Powerful Mobile & Online App</li>
+                                <li><i class="ri-check-line"></i>Best intrest rates on loans and mortgages.
+                                </li>
                                 <li><i class="ri-check-line"></i> Commitment Free</li>
                                 <li><i class="ri-check-line"></i> Full Data Privacy Compliance</li>
                             </ul>
@@ -114,7 +90,7 @@
                             <ul class="reliable-list">
                                 <li><i class="ri-check-line"></i> Free Plan Available</li>
                                 <li><i class="ri-check-line"></i> 100% Transparent Cost</li>
-                                <li><i class="ri-check-line"></i> Debit Mastercard Included</li>
+                                <li><i class="ri-check-line"></i> Virtual Mastercard</li>
                             </ul>
                         </div>
                     </div>
@@ -128,7 +104,7 @@
 <div class="global-transfers-area pt-100 pb-75">
     <div class="container">
         <div class="section-title">
-            <span>Global Transfers</span>
+            <span>International Transaction</span>
             <h2>We Charge As Little As Possible. No Subscription Fee</h2>
         </div>
         <div class="row justify-content-center">
@@ -139,8 +115,8 @@
                         <i class="flaticon-envelope"></i>
                     </div>
                     <h3>Send Money Cheaper And Easier Than Old-school Banks</h3>
-                    <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p>
-                    <a href="protecting-your-money.html" class="global-btn">Send Money</a>
+                    <!-- <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p> -->
+                    <!-- <a href="protecting-your-money.html" class="global-btn">Send Money</a> -->
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -150,8 +126,8 @@
                         <i class="flaticon-money-transfer"></i>
                     </div>
                     <h3>Spend Abroad Without The Hidden Fees</h3>
-                    <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p>
-                    <a href="getting-started.html" class="global-btn">Get Started</a>
+                    <!-- <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p> -->
+                    <!-- <a href="getting-started.html" class="global-btn">Get Started</a> -->
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -161,8 +137,8 @@
                         <i class="flaticon-income"></i>
                     </div>
                     <h3>Receive Payments Like A Local In 9 Currencies</h3>
-                    <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p>
-                    <a href="help-center.html" class="global-btn">Available Accounts</a>
+                    <!-- <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p> -->
+                    <!-- <a href="help-center.html" class="global-btn">Available Accounts</a> -->
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -172,8 +148,8 @@
                         <i class="flaticon-conversion"></i>
                     </div>
                     <h3>Convert And Hold 54 Currencies</h3>
-                    <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p>
-                    <a href="help-center.html" class="global-btn">See All Currencies</a>
+                    <!-- <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p> -->
+                    <!-- <a href="help-center.html" class="global-btn">See All Currencies</a> -->
                 </div>
             </div>
         </div>
@@ -189,9 +165,9 @@
                     data-aos-once="true">
                     <span>Paiement Services Worldwide</span>
                     <h3>Easily Grow Your Business Save More Money</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan congue tempus fringilla diam arcu. Venenatis nulla senectus
-                        risus sagittis.</p>
+                    <p>We work closely with you to fully understand your investment objectives, risk sensitivity, tax
+                        requirements and cash-flow needs. When developing your financial wealth plan, we take a holistic
+                        approach to understand your full financial aspirations.</p>
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6">
                             <ul class="paiement-list">
@@ -213,7 +189,7 @@
             <div class="col-lg-6 col-md-12">
                 <div class="paiement-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
-                    <img src="assets/images/paiement.png" alt="image">
+                    <img src="{{asset('frontend_assets/images/paiement.png')}}" alt="image">
                 </div>
             </div>
         </div>
@@ -233,7 +209,7 @@
                     data-aos-once="true">
                     <div class="benefits-content">
                         <div class="benefits-image">
-                            <img src="assets/images/benefits/benefits-1.png" alt="image">
+                            <img src="{{asset('frontend_assets/images/benefits/benefits-1.png')}}" alt="image">
                         </div>
                         <h3>Global Coverage</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
@@ -246,7 +222,7 @@
                     data-aos-once="true">
                     <div class="benefits-content">
                         <div class="benefits-image">
-                            <img src="assets/images/benefits/benefits-2.png" alt="image">
+                            <img src="{{asset('assets/images/benefits/benefits-2.png')}}" alt="image">
                         </div>
                         <h3>Lowest Fee</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
@@ -259,7 +235,7 @@
                     data-aos-once="true">
                     <div class="benefits-content">
                         <div class="benefits-image">
-                            <img src="assets/images/benefits/benefits-3.png" alt="image">
+                            <img src="{{asset('assets/images/benefits/benefits-3.png')}}" alt="image">
                         </div>
                         <h3>Simple Transfer Methods</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
@@ -272,7 +248,7 @@
                     data-aos-once="true">
                     <div class="benefits-content">
                         <div class="benefits-image">
-                            <img src="assets/images/benefits/benefits-4.png" alt="image">
+                            <img src="{{asset('assets/images/benefits/benefits-4.png')}}" alt="image">
                         </div>
                         <h3>Instant Processing</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
@@ -285,7 +261,7 @@
                     data-aos-once="true">
                     <div class="benefits-content">
                         <div class="benefits-image">
-                            <img src="assets/images/benefits/benefits-5.png" alt="image">
+                            <img src="{{asset('assets/images/benefits/benefits-5.png')}}" alt="image">
                         </div>
                         <h3>Bank-level Security</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
@@ -298,7 +274,7 @@
                     data-aos-once="true">
                     <div class="benefits-content">
                         <div class="benefits-image">
-                            <img src="assets/images/benefits/benefits-6.png" alt="image">
+                            <img src="{{asset('assets/images/benefits/benefits-6.png')}}" alt="image">
                         </div>
                         <h3>Global 24/7 Support</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
@@ -488,8 +464,8 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
-                Simple Solution.</h3>
+            <h3>Open a Secured & Relaible Offshore, Personal, or Business Account?
+                Manx Capitale Privée Banque is Your Fast And Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
                     <a href="help-center.html" class="default-btn">Personal Account</a>
@@ -501,10 +477,10 @@
         </div>
     </div>
     <div class="overview-shape">
-        <img src="assets/images/overview/shape-1.png" alt="image">
+        <img src="{{asset('assets/images/overview/shape-1.png')}}" alt="image">
     </div>
     <div class="overview-shape-2">
-        <img src="assets/images/overview/shape-2.png" alt="image">
+        <img src="{{asset('assets/images/overview/shape-2.png')}}" alt="image">
     </div>
 </div>
 
@@ -523,7 +499,7 @@
                         <span class="odometer" data-count="180">00</span>
                         <span class="small-text">K</span>
                     </h3>
-                    <p>Downloaded</p>
+                    <p>Clients</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-6">
