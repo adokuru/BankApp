@@ -212,8 +212,8 @@
                             <img src="{{asset('frontend_assets/images/benefits/benefits-1.png')}}" alt="image">
                         </div>
                         <h3>Global Coverage</h3>
-                        <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                            adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                        <p>Our servies has no bound. You can send money and complete any transactions securely across
+                            the borders, in mintues without and hassels or hidden charges.</p>
                     </div>
                 </div>
             </div>
@@ -225,8 +225,10 @@
                             <img src="{{asset('assets/images/benefits/benefits-2.png')}}" alt="image">
                         </div>
                         <h3>Lowest Fee</h3>
-                        <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                            adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                        <p>Send money securely across the borders, in mintues, without any hidden charges or extra cost.
+                            Our Business account
+                            allows unlimited transactions without paying COT.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -238,8 +240,8 @@
                             <img src="{{asset('assets/images/benefits/benefits-3.png')}}" alt="image">
                         </div>
                         <h3>Simple Transfer Methods</h3>
-                        <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                            adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                        <p>We offer you a simple fast and secured way to transfer money anywhere in the world. With our
+                            advanced verification technology and processes,transfers are quick and very secured.</p>
                     </div>
                 </div>
             </div>
@@ -251,8 +253,9 @@
                             <img src="{{asset('assets/images/benefits/benefits-4.png')}}" alt="image">
                         </div>
                         <h3>Instant Processing</h3>
-                        <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                            adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                        <p>Your time is precious to us and we understand the need to make your transactions fast and
+                            hassle-free, thats why we dedicate our time to make sure your transactions are swift and
+                            secured.</p>
                     </div>
                 </div>
             </div>
@@ -264,8 +267,8 @@
                             <img src="{{asset('assets/images/benefits/benefits-5.png')}}" alt="image">
                         </div>
                         <h3>Bank-level Security</h3>
-                        <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                            adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                        <p>Our bank services are very secure. There are several level of security measures put in
+                            place to ensure that your banking transactions are done seamlessly.</p>
                     </div>
                 </div>
             </div>
@@ -277,8 +280,8 @@
                             <img src="{{asset('assets/images/benefits/benefits-6.png')}}" alt="image">
                         </div>
                         <h3>Global 24/7 Support</h3>
-                        <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                            adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                        <p>We have dedicated customer service representatives, who are at your beck and call 24/7 to
+                            help you with anything you need in other to have a seemless experience</p>
                     </div>
                 </div>
             </div>

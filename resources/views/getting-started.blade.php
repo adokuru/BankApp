@@ -34,53 +34,56 @@
     <div class="container">
         <div class="section-title">
             <span>Getting Started</span>
-            <h2>Get Set Up And Start Spending With Your Card In Minutes</h2>
+            <h2>Get Set Up And Start In Minutes</h2>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-3 col-sm-6">
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-1.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-1.png')}}" alt="image">
                     </div>
                     <h3>1. Create Account</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <p>Choose a Personal or Business account and start in Minutes. Click on the "Get started"
+                        Button and follow the prompt</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-2.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-2.png')}}" alt="image">
                     </div>
                     <h3>2. Verify Identity</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <p>Once you choose an Account solution, you will be prompted to upload a means of Identification to
+                        verify your identity.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-3.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-3.png')}}" alt="image">
                     </div>
-                    <h3>3. Tap Your Account</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <h3>3. Activate Your Account</h3>
+                    <p>You will get a Notification mail, telling you to verify your account, with an option to recieve a
+                        physical or virtual card. </p>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                     data-aos-once="true">
                     <div class="getting-image">
-                        <img src="assets/images/getting-started/getting-4.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/getting-started/getting-4.png')}}" alt="image">
                     </div>
                     <h3>4. Confirm & Send</h3>
-                    <p>Adipiscing eliId neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed.</p>
+                    <p>Once you have choosen a card type, you will be prompted to
+                        add your address to recieve a physical card.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 <div class="why-choose-us-area ptb-100">
     <div class="container">
@@ -89,22 +92,23 @@
                 <div class="why-choose-us-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                     data-aos-once="true">
                     <span>Why Choose Us</span>
-                    <h3>Moving And Living Abroad Just Got Simpler Get Paid Like A Local</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl bibendum vitae
-                        consequat. Nisl ut sed accumsan congue id tempus fringilla diam arcu. Venenatis nulla
-                        senectus risus sagittis turpis felis egestas.</p>
+                    <h3>Private and Secured Banking</h3>
+                    <p>We are combining the long-standing Swiss Private Banking traditions with a pro-active
+                        entrepreneurial mindset. This alchemy results in what we call Modern Private Bankers, where
+                        agility, integrity and enthusiasm meet in a boutique-sized structure. It is our ambition to
+                        benefit from that to offer “best in class” services.</p>
                     <ul class="choose-us-list">
                         <li>
                             <i class="ri-checkbox-circle-line"></i>
-                            Send money cheaper and easier than old-school banks.
+                            Open a secured and private account in minutes.
                         </li>
                         <li>
                             <i class="ri-checkbox-circle-line"></i>
-                            Spend abroad without the hidden fees.
+                            Get the best intrest rates on loans and mortgages.
                         </li>
                         <li>
                             <i class="ri-checkbox-circle-line"></i>
-                            Move money between countries for salary & more.
+                            24/7 state of the art personalised customer support services.
                         </li>
                     </ul>
                 </div>
@@ -115,13 +119,13 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="choose-image" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
-                                <img src="assets/images/why-choose-us/choose-1.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/2.jpeg')}}" alt="image">
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="choose-image mb-25" data-aos="fade-left" data-aos-delay="50"
                                 data-aos-duration="500" data-aos-once="true">
-                                <img src="assets/images/why-choose-us/choose-2.jpg" alt="image">
+                                <img src="{{asset('frontend_assets/images/main-banner/3.jpeg')}}" alt="image">
                             </div>
                             <div class="choose-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                                 data-aos-once="true">
@@ -130,10 +134,10 @@
                         </div>
                     </div>
                     <div class="choose-shape" data-speed="0.08" data-revert="true">
-                        <img src="assets/images/why-choose-us/shape-1.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/why-choose-us/shape-1.png')}}" alt="image">
                     </div>
                     <div class="choose-shape-2" data-speed="0.08" data-revert="true">
-                        <img src="assets/images/why-choose-us/shape-2.png" alt="image">
+                        <img src="{{asset('frontend_assets/images/why-choose-us/shape-2.png')}}" alt="image">
                     </div>
                 </div>
             </div>
@@ -147,8 +151,9 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
-                Simple Solution.</h3>
+            <h3> Are You Looking For Where You Can Open a Secured & Relaible Offshore, Personal, or Business Account?
+                Manx Capitale Privée Banque is Your Fast And
+                Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
                     <a href="help-center.html" class="default-btn">Personal Account</a>

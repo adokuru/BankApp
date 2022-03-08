@@ -795,45 +795,50 @@
                             <div class="accordion-item">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What Is A Multi-Currency Account And How Does It Work?
+                                    Is It Possible To Open An Account In The Country And Operate The Account While Out
+                                    Of The Country?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#FaqAccordion">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                            tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus
-                                            magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis
-                                            aliquam.</p>
+                                        <p>Yes. The account can be operated through any of our card products or internet
+                                            banking solution.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    What Happened To The Borderless Account?
+                                    How Long Does It Take To Open An Account With The Bank?
                                 </button>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#FaqAccordion">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                            tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus
-                                            magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis
-                                            aliquam.</p>
+                                        <p>Accounts are opened within 24 hours upon submission of complete
+                                            documentation.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can I Hold Multiple Currencies In A Snuff Account?
+                                    What Types Of Transactions Can I Perform On Manx Capitale Privée BanqueOnline?
                                 </button>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#FaqAccordion">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                            tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus
-                                            magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis
-                                            aliquam.</p>
+                                        <p>
+
+                                        <ul>
+                                            <li>Check your balance</li>
+                                            <li>Generation your bank statements</li>
+                                            <li>Perform own bank and third-party transfers</li>
+                                            <li>Perform international transfers</li>
+                                            <li>Review your transaction history</li>
+                                            <li>Pay your bills</li>
+                                            <li>Schedule standing orders</li>
+                                        </ul>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

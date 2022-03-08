@@ -33,7 +33,7 @@
 <div class="terms-of-service-area ptb-100">
     <div class="container">
         <div class="terms-of-service-content">
-            <p><i>This Terms of Service was last updated on September 1, 2021.</i></p>
+            <p><i>This Terms of Service was last updated on January 1, 2022.</i></p>
             <h3><span>1.</span> Our Website</h3>
             <p>Our website address is: http://snuff.com</p>
             <blockquote class="blockquote">
@@ -95,8 +95,9 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Open a Secured & Relaible Offshore, Personal, or Business Account?
-                Manx Capitale Privée Banque is Your Fast And Secured Solution.</h3>
+            h3> Are You Looking For Where You Can Open a Secured & Relaible Offshore, Personal, or Business Account?
+            Manx Capitale Privée Banque is Your Fast And
+            Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
                     <a href="help-center.html" class="default-btn">Personal Account</a>

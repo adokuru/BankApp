@@ -78,9 +78,9 @@
                             <li class="nav-item">
                                 <a href="{{ route('about') }}" class="nav-link">About Us</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="{{ route('features') }}" class="nav-link">Features</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a href="{{ route('getting-started') }}" class="nav-link">Getting Started</a>
                             </li>
@@ -100,9 +100,9 @@
                                     <li class="nav-item">
                                         <a href="{{ route('terms-of-service') }}" class="nav-link">Terms of Service</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                             <li class="nav-item">

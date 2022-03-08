@@ -43,40 +43,37 @@
                         <div class="accordion-item">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What Is A Multi-Currency Account And How Does It Work?
+                                What if I have another question?
                             </button>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#FaqAccordion">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                        tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna
-                                        metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+                                    <p>Call our contact centre on 01 2716816 or 07007007000. You can also send a mail to
+                                        customerservice@www.snuffbank.com. We look forward to serving you.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What Happened To The Borderless Account?
+                                Can I print my Statement of account?
                             </button>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                        tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna
-                                        metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+                                    <p>Yes. You can print your statement of account by clicking on ‘Export to Excel’ or
+                                        ‘Export to PDF’ button. This downloads your statement of account in excel or PDF
+                                        format which you can save or print.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Can I Hold Multiple Currencies In A Snuff Account?
+                                Can I schedule future transfers?
                             </button>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                        tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna
-                                        metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+                                    <p>Yes, you can schedule future transfers through the standing order menu.</p>
                                 </div>
                             </div>
                         </div>
@@ -88,42 +85,57 @@
                     <div class="accordion" id="FaqAccordionTwo">
                         <div class="accordion-item">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                What Is The Best Features And Services We Deliver?
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Who determines the exchange rate and charges on transfers?
                             </button>
                             <div id="collapseFour" class="accordion-collapse collapse show"
                                 data-bs-parent="#FaqAccordionTwo">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                        tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna
-                                        metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+
+                                    <p>The exchange rate and transaction charge are determined by the Money Transfer
+                                        Organization and not the Bank.</p>
+
+
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What Are The Objectives Of This Service?
+                                How safe is Manx Capitale Privée Banque online services?
                             </button>
                             <div id="collapseFive" class="accordion-collapse collapse"
                                 data-bs-parent="#FaqAccordionTwo">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                        tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna
-                                        metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+                                    <p>UnionOnline is very secure. There are several level of security measures put in
+                                        place to ensure that your banking transactions are done seamlessly. The security
+                                        features include:
+                                    <ul>
+                                        <li>Unique username</li>
+                                        <li>Password</li>
+                                        <li>Security word</li>
+                                        <li>Token</li>
+                                        </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                What Is A Multi-currency Card?
+                                What If I forget my Manx Capitale Privée BanqueOnline password?
                             </button>
                             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#FaqAccordionTwo">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis
-                                        tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna
-                                        metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+
+                                    <p>UnionOnline is very secure. There are several level of security measures put in
+                                        place to ensure that your banking transactions are done seamlessly. The security
+                                        features include:
+                                    <ul>
+                                        <li>Unique username</li>
+                                        <li>Password</li>
+                                        <li>Security word</li>
+                                        <li>Token</li>
+                                        </p>
                                 </div>
                             </div>
                         </div>
@@ -140,8 +152,9 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
-                Simple Solution.</h3>
+            <h3> Are You Looking For Where You Can Open a Secured & Relaible Offshore, Personal, or Business Account?
+                Manx Capitale Privée Banque is Your Fast And
+                Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
                     <a href="{{ route('help-center')}}" class="default-btn">Personal Account</a>
