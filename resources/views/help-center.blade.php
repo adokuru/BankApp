@@ -63,7 +63,7 @@
                         <div class="explore-image">
                             <img src="assets/images/explore/explore-3.png" alt="image">
                         </div>
-                        <h3>Snuff Card</h3>
+                        <h3>Manx Capitale Privée Banque Card</h3>
                         <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
                             adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
                     </div>

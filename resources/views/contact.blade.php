@@ -172,7 +172,7 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
+            <h3>Sending International Business Payments or Sending Money To Family Overseas? Manx Capitale Privée Banque Are Your Fast And
                 Simple Solution.</h3>
             <ul class="overview-btn-group">
                 <li>

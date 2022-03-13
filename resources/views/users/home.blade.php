@@ -7,7 +7,7 @@
           <div class="col-xl-4">
              <div class="page-title-content">
                 <h3>Account</h3>
-                <p class="mb-2">Welcome Snuff Account</p>
+                <p class="mb-2">Welcome Manx Capitale Privée Banque Account</p>
              </div>
           </div>
           <div class="col-auto">

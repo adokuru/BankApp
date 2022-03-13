@@ -408,7 +408,7 @@
                             <div class="accordion-item">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can I Hold Multiple Currencies In A Snuff Account?
+                                    Can I Hold Multiple Currencies In A Manx Capitale Privée Banque Account?
                                 </button>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#FaqAccordion">
@@ -440,7 +440,7 @@
         <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
             data-aos-once="true">
             <span>Connect Us</span>
-            <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
+            <h3>Sending International Business Payments or Sending Money To Family Overseas? Manx Capitale Privée Banque Are Your Fast And
                 Simple Solution.</h3>
             <ul class="overview-btn-group">
                 <li>

@@ -93,7 +93,7 @@
                                 <h4 class="card-title">Close Account</h4>
                             </div>
                             <div class="card-body">
-                                <p>Withdraw funds and close your snuff account - <span class="text-danger">this
+                                <p>Withdraw funds and close your Manx Capitale Privée Banque account - <span class="text-danger">this
                                         cannot be undone</span></p>
                                 <a href="#" class="btn btn-danger">Close Account</a>
                             </div>

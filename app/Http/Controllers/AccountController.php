@@ -13,12 +13,16 @@ use Jenssegers\Agent\Agent;
 class AccountController extends Controller
 {
     //
+    public function index()
+    {
+        $accounts = Account::all();
+        return view('admin.account.index', compact('accounts'));
+    }
     public function home()
     {
         $user = Auth::user();
         $account = Account::where('user_id', $user->id)->first();
         return view('users.home', compact('user', 'account'));
-
     }
     public function activity()
     {
@@ -26,11 +30,10 @@ class AccountController extends Controller
             return collect();
         }
 
-        $sessions =  (
-            DB::connection(config('session.connection'))->table(config('session.table', 'sessions'))
-                    ->where('user_id', Auth::user()->getAuthIdentifier())
-                    ->orderBy('last_activity', 'desc')
-                    ->get()
+        $sessions =  (DB::connection(config('session.connection'))->table(config('session.table', 'sessions'))
+            ->where('user_id', Auth::user()->getAuthIdentifier())
+            ->orderBy('last_activity', 'desc')
+            ->get()
         )->map(function ($session) {
             return (object) [
                 'agent' => $this->createAgent($session),

@@ -7,7 +7,7 @@
     @if (View::hasSection('seo'))
         @yield('seo')
     @else
-        <title>Snuff - Swiss Banking Company</title>
+        <title>Manx Capitale Privée Banque - Swiss Banking Company</title>
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="Banking , Loans, Transfer" />
         <meta name="description" content="" />
@@ -68,7 +68,7 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                includedLanguages: "en,fr,ar,es",
+                includedLanguages: "en,fr,de,es,pt",
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }

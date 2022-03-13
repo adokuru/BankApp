@@ -51,8 +51,8 @@
                             <form method="post" name="myform" class="signin_validate row g-3" action="{{ route('login') }}">
                                 @csrf
                                 <div class="col-12">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" placeholder="hello@example.com" name="email">
+                                    <label class="form-label">Username</label>
+                                    <input type="username" class="form-control" placeholder="hello@example.com" name="username">
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label">Password</label>

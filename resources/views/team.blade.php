@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="zxx">
 
-<!-- Mirrored from templates.hibootstrap.com/snuff/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 12:39:03 GMT -->
-
 <head>
 
     <meta charset="utf-8">
@@ -22,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <title>Snuff - Money Transfer & Banking HTML Template</title>
+    <title>Manx Capitale Privée Banque - Swiss Banking Company</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 
@@ -613,7 +611,7 @@
             <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                 data-aos-once="true">
                 <span>Connect Us</span>
-                <h3>Sending International Business Payments or Sending Money To Family Overseas? Snuff Are Your Fast And
+                <h3>Sending International Business Payments or Sending Money To Family Overseas? Manx Capitale Privée Banque Are Your Fast And
                     Simple Solution.</h3>
                 <ul class="overview-btn-group">
                     <li>
@@ -722,8 +720,8 @@
             <div class="container">
                 <div class="copyright-area-content">
                     <p>
-                        Copyright © 2021 Snuff All Rights Reserved by
-                        <a href="https://hibootstrap.com/" target="_blank">
+                        Copyright © 2021 Manx Capitale Privée Banque All Rights Reserved by
+                        <a href="" target="_blank">
                             HiBootstrap
                         </a>
                     </p>
@@ -756,6 +754,5 @@
     <script src="assets/js/main.js"></script>
 </body>
 
-<!-- Mirrored from templates.hibootstrap.com/snuff/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 12:39:15 GMT -->
 
 </html>
