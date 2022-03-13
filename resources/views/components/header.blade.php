@@ -24,7 +24,10 @@
                         <li>
                             <a href="{{ route('help-center') }}">Help</a>
                         </li>
-                        <li class="dropdown language-option">
+                        <li class="dropdown language-option" id="google_translate_element">
+                          
+                        </li>
+                        {{-- <div class="dropdown language-option" id="google_translate_element">
                             <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                                 <i class="ri-global-line"></i>
@@ -41,7 +44,7 @@
                                     German
                                 </a>
                             </div>
-                        </li>
+                        </div> --}}
                     </ul>
                 </div>
             </div>
