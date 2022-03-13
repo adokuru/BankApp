@@ -1,0 +1,49 @@
+[2022-03-13 08:16:40] local.ERROR: include(C:\laragon\www\BankApp\vendor\composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\laragon\\www\\BankApp\\vendor\\composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory at C:\\laragon\\www\\BankApp\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 C:\\laragon\\www\\BankApp\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\lara...', 'C:\\\\laragon\\\\www\\\\...', 571)
+#1 C:\\laragon\\www\\BankApp\\vendor\\composer\\ClassLoader.php(571): include()
+#2 C:\\laragon\\www\\BankApp\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('C:\\\\laragon\\\\www\\\\...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Kernel')
+#4 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(877): ReflectionClass->__construct('App\\\\Http\\\\Kernel')
+#5 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Http\\\\Kernel')
+#6 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(851): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Kernel', Array, false)
+#7 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(296): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Kernel', Array, false)
+#8 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#9 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(758): Illuminate\\Container\\Container->build(Object(Closure))
+#10 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(851): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array, true)
+#11 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(694): Illuminate\\Foundation\\Application->resolve('Illuminate\\\\Cont...', Array)
+#12 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(836): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#13 C:\\laragon\\www\\BankApp\\vendor\\laravel\\sanctum\\src\\SanctumServiceProvider.php(128): Illuminate\\Foundation\\Application->make('Illuminate\\\\Cont...')
+#14 C:\\laragon\\www\\BankApp\\vendor\\laravel\\sanctum\\src\\SanctumServiceProvider.php(55): Laravel\\Sanctum\\SanctumServiceProvider->configureMiddleware()
+#15 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Sanctum\\SanctumServiceProvider->boot()
+#16 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(924): Illuminate\\Container\\Container->call(Array)
+#21 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(905): Illuminate\\Foundation\\Application->bootProvider(Object(Laravel\\Sanctum\\SanctumServiceProvider))
+#22 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Laravel\\Sanctum\\SanctumServiceProvider), 22)
+#23 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(906): array_walk(Array, Object(Closure))
+#24 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#25 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#26 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#27 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#28 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2022-03-13 08:16:42] local.ERROR: Uncaught Symfony\Component\Finder\Exception\DirectoryNotFoundException: The "C:\laragon\www\BankApp\resources\views" directory does not exist. in C:\laragon\www\BankApp\vendor\symfony\finder\Finder.php:592
+Stack trace:
+#0 C:\laragon\www\BankApp\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php(535): Symfony\Component\Finder\Finder->in('C:\\laragon\\www\\...')
+#1 Command line code(1): Illuminate\Filesystem\Filesystem->files('C:\\laragon\\www\\...')
+#2 Command line code(1): getViews('C:\\laragon\\www\\...', Object(Illuminate\Filesystem\Filesystem))
+#3 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Symfony\\Component\\Finder\\Exception\\DirectoryNotFoundException: The \"C:\\laragon\\www\\BankApp\esources\\views\" directory does not exist. in C:\\laragon\\www\\BankApp\\vendor\\symfony\\finder\\Finder.php:592
+Stack trace:
+#0 C:\\laragon\\www\\BankApp\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(535): Symfony\\Component\\Finder\\Finder->in('C:\\\\laragon\\\\www\\\\...')
+#1 Command line code(1): Illuminate\\Filesystem\\Filesystem->files('C:\\\\laragon\\\\www\\\\...')
+#2 Command line code(1): getViews('C:\\\\laragon\\\\www\\\\...', Object(Illuminate\\Filesystem\\Filesystem))
+#3 {main}
+  thrown at C:\\laragon\\www\\BankApp\\vendor\\symfony\\finder\\Finder.php:592)
+[stacktrace]
+#0 {main}
+"} 
