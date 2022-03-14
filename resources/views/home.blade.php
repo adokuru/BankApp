@@ -8,7 +8,7 @@
                 data-aos-once="true">
                 <div class="main-banner-content">
                     <span>Simple. Quick. Secure.</span>
-                    <h1>Get a Secured Personal and Business Account </h1>
+                    <h1>Get a Secured Savings and Business Account </h1>
                     <p>We offer high quality, sophisticated, personal and business solutions founded on a long tradition
                         of
                         wealth and asset management, infused with an entrepreneurial and business spirit.
@@ -757,7 +757,13 @@
                 Secured Solution.</h3>
             <ul class="overview-btn-group">
                 <li>
-                    <a href="help-center.html" class="default-btn">Personal Account</a>
+                    <a href="help-center.html" class="default-btn">Saving Account</a>
+                </li>
+                <li>
+                    <a href="help-center.html" class="optional-btn">Current Account</a>
+                </li>
+                <li>
+                    <a href="help-center.html" class="default-btn">Investment Account</a>
                 </li>
                 <li>
                     <a href="help-center.html" class="optional-btn">Business Account</a>

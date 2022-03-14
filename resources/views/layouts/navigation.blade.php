@@ -15,7 +15,7 @@
             class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             href="{{ route('dashboard') }}"
         >
-            Notus JS
+            Manx Capitale Privée Banque 
         </a>
         <ul class="md:hidden items-center flex flex-wrap list-none">
             <li class="inline-block relative">
@@ -66,7 +66,7 @@
                             class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                             href="{{ route('dashboard') }}"
                         >
-                            Notus JS
+                            Manx Capitale Privée Banque 
                         </a>
                     </div>
                     <div class="w-6/12 flex justify-end">
@@ -107,7 +107,7 @@
                 </li>
 
                 <li class="items-center">
-                    <x-nav-link href="{{ route('account.index') }}" :active="request()->routeIs('account.index')">
+                    <x-nav-link href="{{ route('admin.account.index') }}" :active="request()->routeIs('admin.account.index')">
                         <x-slot name="icon">
                             <i class="far fa-address-card mr-2 text-sm opacity-75"></i>
                         </x-slot>

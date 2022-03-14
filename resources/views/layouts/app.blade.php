@@ -24,8 +24,7 @@
 
     <div class="relative md:ml-64 bg-blueGray-50">
         <!-- TOP NAV -->
-        <nav
-            class="absolute top-0 left-0 z-10 flex items-center w-full p-4 bg-transparent md:flex-row md:flex-nowrap md:justify-start">
+        <nav class="absolute top-0 left-0 z-10 flex items-center w-full p-4 bg-transparent md:flex-row md:flex-nowrap md:justify-start">
             <div class="flex flex-wrap items-center justify-end w-full px-4 mx-auto md:flex-nowrap md:px-10">
                 <x-dropdown>
                     <x-slot name="trigger">
@@ -38,8 +37,7 @@
                         <x-divider />
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <x-dropdown-link href="{{ route('logout') }}"
-                                onclick="event.preventDefault(); this.closest('form').submit();">
+                            <x-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
                         </form>
@@ -54,6 +52,23 @@
                 <div class="flex flex-wrap"></div>
             </div>
         </div>
+        @if ($errors->any())
+            <div>
+                <div class="font-medium text-red-600">{{ __('Whoops! Something went wrong.') }}</div>
+
+                <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+        @if (session('status'))
+            <p class="mb-4 font-medium text-sm text-green-600">
+                {{ session('status') }}
+            </p>
+        @endif
         <div class="w-full px-4 mx-auto -m-24 md:px-10">
             {{ $slot }}
         </div>

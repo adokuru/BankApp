@@ -35,7 +35,7 @@
         <div class="terms-of-service-content">
             <p><i>This Terms of Service was last updated on January 1, 2022.</i></p>
             <h3><span>1.</span> Our Website</h3>
-            <p>Our website address is: http://snuff.com</p>
+            <p>Our website address is: http://Manx-Capitale.com</p>
             <blockquote class="blockquote">
                 <p>We collect certain data from you directly like information you enter yourself data about your
                     participation in courses and data from third-party platforms you connect with Manx Capitale Privée Banque. We also

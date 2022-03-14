@@ -118,7 +118,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
                         <label>Email *</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="example@snuff.com"
+                        <input type="email" name="email" id="email" class="form-control" placeholder="example@Manx-Capitale.com"
                             required data-error="Please enter your email">
                         <div class="help-block with-errors"></div>
                     </div>
