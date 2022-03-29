@@ -85,10 +85,15 @@
                         </a>
                     </li>
                     <li><a href="{{route('Account_transfers')}}">
-                            <span><i class="ri-secure-payment-line"></i></span>
+                            <span><i class="ri-file-transfer-line"></i></span>
                             <span class="nav-text">Transfers</span>
                         </a>
                     </li>
+                    <li><a href="{{route('Account_loans')}}">
+                        <span><i class="ri-hand-coin-line"></i></span>
+                        <span class="nav-text">Loans</span>
+                    </a>
+                </li>
                     <li><a href="{{route('Account_transactions')}}">
                             <span><i class="ri-file-copy-2-line"></i></span>
                             <span class="nav-text">Statement</span>

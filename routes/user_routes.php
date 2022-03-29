@@ -10,6 +10,8 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/account/activity', [AccountController::class, 'activity'])->name('Account_activity');
     Route::get('/account/deposit', [AccountController::class, 'deposit'])->name('Account_deposit');
     Route::get('/account/transfers', [AccountController::class, 'transfers'])->name('Account_transfers');
+    Route::get('/account/loans', [AccountController::class, 'loans'])->name('Account_loans');
+    Route::get('/account/loans/add', [AccountController::class, 'loans_add'])->name('Account_loans_add');
     Route::get('/account/transactions', [AccountController::class, 'transactions'])->name('Account_transactions');
     Route::get('/account/debit}', [AccountController::class, 'debits'])->name('account.debits');
 

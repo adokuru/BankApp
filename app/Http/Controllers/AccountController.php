@@ -361,4 +361,16 @@ class AccountController extends Controller
         $account->save();
         return redirect()->route('admin.account.index')->with('success', 'Transfer has been disabled');
     }
+    public function loans()
+    {
+        $user = Auth::user();
+        $account = Account::find($user->account->id);
+        return view('users.loans', compact('user', 'account'));
+    }
+    public function loans_add()
+    {
+        $user = Auth::user();
+        $account = Account::find($user->account->id);
+        return view('users.loansAdd', compact('user', 'account'));
+    }
 }
