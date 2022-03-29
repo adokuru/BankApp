@@ -29,6 +29,7 @@ class User extends Authenticatable
         'postal_code',
         'username',
         'role',
+        'image',
     ];
     /**
      * The attributes that should be hidden for serialization.
@@ -72,6 +73,15 @@ class User extends Authenticatable
         return $this->hasMany(Deposit::class, 'user_id', 'id');
     }
 
+    public function totaldeposit()
+    {
+        return $this->hasMany(Deposit::class, 'user_id', 'id')->sum('amount');
+    }
+    public function totalcredits()
+    {
+        return $this->hasMany(Debits::class, 'user_id', 'id')->sum('amount');
+    }
+
     public function account()
     {
         return $this->hasOne(Account::class);
@@ -79,7 +89,7 @@ class User extends Authenticatable
 
     public function getProfilePhotoUrlAttribute()
     {
-        return 'https://ui-avatars.com/api/?name=' . $this->name;
+        return 'https://ui-avatars.com/api/?name=' . $this->first_name . '+' . $this->last_name . '&background=0D8ABC&color=fff&size=128';
     }
 
     public function getBalanceAttribute()

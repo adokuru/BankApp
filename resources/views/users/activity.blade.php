@@ -8,7 +8,7 @@
                         <div class="col-xl-4">
                             <div class="page-title-content">
                                 <h3>Activity</h3>
-                                <p class="mb-2">Welcome Intez Activity page</p>
+                                <p class="mb-2">Welcome Manx Capitale Privée Banque Activity page</p>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -20,7 +20,6 @@
             <div class="col-xxl-12">
                 <div class="settings-menu">
                     <a href="{{ route('Account_profile') }}">Profile</a>
-                    <a href="{{ route('Account_security') }}">Security</a>
                     <a href="{{ route('Account_activity') }}">Activity</a>
                 </div>
                 <div class="row">

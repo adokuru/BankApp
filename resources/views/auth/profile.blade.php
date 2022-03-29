@@ -38,8 +38,9 @@
                                         placeholder="{{ __('Name') }}"
                                         name="name"
                                         id="name"
-                                        value="{{ old('name', auth()->user()->name) }}"
+                                        value="{{ old('name', auth()->user()->first_name .' '. auth()->user()->last_name) }}"
                                         required
+                                        readonly
                                 />
                             </div>
                         </div>
@@ -52,6 +53,7 @@
                                         id="email"
                                         value="{{ old('email', auth()->user()->email) }}"
                                         placeholder="{{ __('Email') }}"
+                                        readonly
                                 />
                             </div>
                         </div>

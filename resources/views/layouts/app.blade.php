@@ -29,7 +29,7 @@
                 <x-dropdown>
                     <x-slot name="trigger">
                         <a class="block text-blueGray-500" href="#pablo" onclick="openDropdown(event,'user-dropdown')">
-                            <span class="text-white">{{ Auth::user()->name }}</span>
+                            <span class="text-white">{{ Auth::user()->first_name }}</span>
                         </a>
                     </x-slot>
                     <x-slot name="content">
@@ -46,29 +46,25 @@
             </div>
         </nav>
         <!-- END TOP NAV -->
-
+        @if ($message = Session::get('success'))
+            <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-emerald-500">
+                <span class="text-xl inline-block mr-5 align-middle">
+                    <i class="fas fa-bell"></i>
+                </span>
+                <span class="inline-block align-middle mr-8">
+                    <b class="capitalize">Success!</b> {{ $message }}
+                </span>
+            </div>
+        @endif
+        <x-errors class="mb-4" :errors="$errors" />
         <div class="relative pt-12 pb-32 bg-pink-600 md:pt-32">
             <div class="w-full px-4 mx-auto md:px-10">
                 <div class="flex flex-wrap"></div>
             </div>
         </div>
-        @if ($errors->any())
-            <div>
-                <div class="font-medium text-red-600">{{ __('Whoops! Something went wrong.') }}</div>
 
-                <ul class="mt-3 list-disc list-inside text-sm text-red-600">
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
 
-        @if (session('status'))
-            <p class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
-            </p>
-        @endif
+
         <div class="w-full px-4 mx-auto -m-24 md:px-10">
             {{ $slot }}
         </div>

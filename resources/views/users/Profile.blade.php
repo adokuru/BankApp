@@ -9,7 +9,7 @@
                         <div class="col-xl-4">
                             <div class="page-title-content">
                                 <h3>Profile</h3>
-                                <p class="mb-2">Welcome to Intez Profile page</p>
+                                <p class="mb-2">Welcome to Manx Capitale Privée Banque Profile page</p>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -21,7 +21,6 @@
             <div class="col-xxl-12 col-xl-12">
                 <div class="settings-menu">
                     <a href="{{ route('Account_profile') }}">Profile</a>
-                    <a href="{{ route('Account_security') }}">Security</a>
                     <a href="{{ route('Account_activity') }}">Activity</a>
                 </div>
                 <div class="row">
@@ -35,11 +34,11 @@
                                     <div class="row g-3">
                                         <div class="col-xxl-12 col-12 mb-3">
                                             <label class="form-label">Full Name</label>
-                                            <input type="text" class="form-control" placeholder="{{ $user->name }}" value="{{ $user->name }}">
+                                            <input type="text" class="form-control" placeholder="{{ $user->first_name }}" value="{{ $user->first_name }} {{ $user->last_name }}">
                                         </div>
                                         <div class="col-xxl-12 col-12 mb-3">
                                             <div class="d-flex align-items-center">
-                                                <img class="me-3 rounded-circle me-0 me-sm-3" src="/frontend_assets/images/profile/3.png" width="55" height="55" alt="">
+                                                <img class="me-3 rounded-circle me-0 me-sm-3" src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ $user->first_name }}{{ $user->last_name }}" width="55" height="55" alt="">
                                                 <div class="media-body">
                                                     <h4 class="mb-0">{{ $user->name }}</h4>
                                                     <p class="mb-0">Max file size is 5mb
@@ -74,7 +73,7 @@
                                     <div class="row g-3">
                                         <div class="col-12 mb-3">
                                             <label class="form-label">New Email</label>
-                                            <input type="email" class="form-control" placeholder="Email" value="{{ $user->email }}" disabled>
+                                            <input readonly type="text" class="form-control" placeholder="Email" value="{{ $user->username }}" disabled>
                                         </div>
                                         <div class="col-12 mb-3">
                                             <h4 class="card-title">Change Password</h4>
@@ -83,11 +82,7 @@
                                             <input type="password" class="form-control" placeholder="**********" name="password">
                                             <label class="form-label">Confirm New Password</label>
                                             <input type="password" class="form-control" placeholder="**********" name="confirm_password">
-                                            <small class="mt-2 mb-0 d-block">Enable two factor authencation
-                                                on the
-                                                security
-                                                page
-                                            </small>
+                                            
                                         </div>
                                         <div class="col-12 col-12 mb-3">
                                             <button class="btn btn-primary">Save</button>
@@ -107,19 +102,20 @@
                                     <div class="row g-4">
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
                                             <label class="form-label">Address</label>
-                                            <input type="text" class="form-control" placeholder="123, Central Square, Brooklyn" name="permanentaddress">
+                                            <input value="{{ $user->address }}" type="text" class="form-control" placeholder="123, Central Square, Brooklyn" name="permanentaddress">
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
                                             <label class="form-label">City</label>
-                                            <input type="text" class="form-control" placeholder="New York" name="city">
+                                            <input value="{{ $user->city }}" type="text" class="form-control" placeholder="New York" name="city">
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
                                             <label class="form-label">Post Code</label>
-                                            <input type="text" class="form-control" placeholder="25481" name="postal">
+                                            <input value="{{ $user->potal_code }}" type="text" class="form-control" placeholder="25481" name="postal">
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
                                             <label class="form-label">Country</label>
-                                            <select class="form-select" name="country">
+                                            <input value="{{ $user->country }}" type="text" class="form-control" placeholder="Swiss" name="country">
+                                            {{-- <select class="form-select" name="country">
                                                 <option value="">Select</option>
                                                 <option value="Afghanistan">Afghanistan</option>
                                                 <option value="Åland Islands">Åland Islands</option>
@@ -442,7 +438,7 @@
                                                 <option value="Zimbabwe">Zimbabweoption&gt;
 
                                                 </option>
-                                            </select>
+                                            </select> --}}
                                         </div>
                                         <div class="col-12">
                                             <button class="btn btn-primary pl-5 pr-5">Save</button>

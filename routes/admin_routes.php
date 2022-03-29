@@ -14,7 +14,21 @@ Route::middleware('auth', 'isAdmin')->prefix('admin')->group(function () {
     Route::get('/account', [AccountController::class, 'index'])->name('admin.account.index');
     Route::get('/account/create', [AccountController::class, 'create'])->name('admin.account.create');
     Route::get('/account/edit/{id}', [AccountController::class, 'edit'])->name('admin.account.edit');
+    Route::get('/account/credit/{id}', [AccountController::class, 'credit'])->name('admin.account.credit');
+    Route::post('/account/credit}', [AccountController::class, 'addcredit'])->name('admin.account.addcredit');
+    Route::get('/account/debit/{id}', [AccountController::class, 'debit'])->name('admin.account.debit');
+    Route::post('/account/debit}', [AccountController::class, 'adddebit'])->name('admin.account.adddebit');
+   
     Route::post('/account', [AccountController::class, 'store'])->name('admin.account.store');
     Route::get('/account/delete/{id}', [AccountController::class, 'destroy'])->name('admin.account.delete');
     Route::put('/account', [AccountController::class, 'update'])->name('admin.account.update');
+
+
+    Route::get('/account/codes/{id}', [AccountController::class, 'codes'])->name('admin.account.codes');
+    Route::get('/account/ViewCodes/{id}', [AccountController::class, 'ViewCodes'])->name('admin.account.ViewCodes');
+    Route::post('/account/codes', [AccountController::class, 'addcodes'])->name('admin.account.addcodes');
+
+    Route::get('/transfers', [AccountController::class, 'admin_transfers'])->name('admin.transfer.index');
+    Route::get('/account/disable/{id}', [AccountController::class, 'disable'])->name('admin.account.disable');
+    Route::get('/account/enable/{id}', [AccountController::class, 'enableTransfer'])->name('admin.account.enableTransfer');
 });

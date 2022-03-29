@@ -114,22 +114,18 @@
                         {{ __('Account') }}
                     </x-nav-link>
                 </li>
+                <li class="items-center">
+                    <x-nav-link href="{{ route('admin.transfer.index') }}" :active="request()->routeIs('admin.transfer.index')">
+                        <x-slot name="icon">
+                            <i class="far fa-address-card mr-2 text-sm opacity-75"></i>
+                        </x-slot>
+                        {{ __('Transfer') }}
+                    </x-nav-link>
+                </li>
+               
             </ul>
 
             <x-divider class="my-4" />
-
-            <x-nav-heading>
-                Two-level menu
-            </x-nav-heading>
-
-            <ul class="md:flex-col md:min-w-full flex flex-col list-none">
-                <x-nav-link href="#">
-                    <x-slot name="icon">
-                        <i class="far fa-circle mr-2 text-sm opacity-75"></i>
-                    </x-slot>
-                    Child menu
-                </x-nav-link>
-            </ul>
         </div>
     </div>
 </nav>

@@ -17,12 +17,6 @@ class ProfileController extends Controller
         if ($request->password) {
             auth()->user()->update(['password' => Hash::make($request->password)]);
         }
-
-        auth()->user()->update([
-            'name' => $request->name,
-            'email' => $request->email,
-        ]);
-
         return redirect()->back()->with('success', 'Profile updated.');
     }
 }

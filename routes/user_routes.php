@@ -11,6 +11,15 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/account/deposit', [AccountController::class, 'deposit'])->name('Account_deposit');
     Route::get('/account/transfers', [AccountController::class, 'transfers'])->name('Account_transfers');
     Route::get('/account/transactions', [AccountController::class, 'transactions'])->name('Account_transactions');
+    Route::get('/account/debit}', [AccountController::class, 'debits'])->name('account.debits');
+
+    Route::get('/account/transfers/new', [AccountController::class, 'new_transfers'])->name('Account_transfers_new');
+    Route::post('/account/transfers/new', [AccountController::class, 'Addtransfer'])->name('Addtransfer');
+    Route::post('/account/transfers/otp1', [AccountController::class, 'otp1'])->name('transferOTP1');
+    Route::post('/account/transfers/otp2', [AccountController::class, 'otp2'])->name('transferOTP2');
+    Route::post('/account/transfers/otp3', [AccountController::class, 'otp3'])->name('transferOTP3');
+    Route::post('/account/transfers/emailotp', [AccountController::class, 'emailotp'])->name('emailotp');
+    Route::get('/account/transfers/confirm/{id}', [AccountController::class, 'transferConfirm'])->name('users.transfer.confirm');
 });
 
 Route::get('/account/2fa', [AccountController::class, 'twofa'])->name('Account_2fa');

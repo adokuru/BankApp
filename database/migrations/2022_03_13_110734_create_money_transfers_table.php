@@ -15,12 +15,14 @@ return new class extends Migration
     {
         Schema::create('money_transfers', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('account_id');
             $table->foreignId('user_id');
-            $table->string('to_account_number');
-            $table->string('from_account_number');
-            $table->string('transaction_code');
+            $table->string('recepient_name');
+            $table->string('recepient_account_number');
             $table->string('transaction_reference');
-            $table->string('transaction_type');
+            $table->string('recepient_account_bank');
+            $table->string('recepient_swift');
+            $table->string('recepient_country');
             $table->decimal('amount', 10, 2);
             $table->string('currency');
             $table->string('status');

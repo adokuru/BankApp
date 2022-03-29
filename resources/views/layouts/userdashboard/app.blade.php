@@ -12,6 +12,8 @@
         <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="{{asset('user_dashboard/css/style.css')}}">
 
+        <link rel="stylesheet" href="https://demo.harnishdesign.net/html/payyed/vendor/font-awesome/css/all.min.css">
+
         @livewireStyles
     </head>
     <body class="dashboard">
@@ -39,13 +41,13 @@
                          
                            <div class="dropdown profile_log dropdown">
                               <div data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                 <div class="user icon-menu "><span><i class="ri-user-line"></i></span></div>
+                                <img class="me-3 rounded-circle me-0 me-sm-3" src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ auth()->user()->first_name }}{{ auth()->user()->last_name }}" width="55" height="55" alt="">
                               </div>
                               <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu dropdown-menu-right">
                                  <div class="user-email">
                                     <div class="user">
                                        <div class="user-info">
-                                          <h5>{{auth()->user()->name}}</h5>
+                                          <h5>{{auth()->user()->first_name}} {{auth()->user()->last_name}}</h5>
                                           <span>{{auth()->user()->email}}</span>
                                        </div>
                                     </div>
@@ -77,6 +79,11 @@
                             <span class="nav-text">Depoist</span>
                         </a>
                     </li>
+                    <li><a href="{{route('account.debits')}}">
+                            <span><i class="ri-wallet-line"></i></span>
+                            <span class="nav-text">Debits</span>
+                        </a>
+                    </li>
                     <li><a href="{{route('Account_transfers')}}">
                             <span><i class="ri-secure-payment-line"></i></span>
                             <span class="nav-text">Transfers</span>
@@ -84,7 +91,7 @@
                     </li>
                     <li><a href="{{route('Account_transactions')}}">
                             <span><i class="ri-file-copy-2-line"></i></span>
-                            <span class="nav-text">Transactions</span>
+                            <span class="nav-text">Statement</span>
                         </a>
                     </li>
                     <li><a href="{{route('Account_profile')}}">

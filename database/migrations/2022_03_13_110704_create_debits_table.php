@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('debits', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('account_id');
             $table->foreignId('user_id');
             $table->float('amount');
             $table->timestamps();
