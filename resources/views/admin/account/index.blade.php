@@ -67,7 +67,8 @@
                                     <a class="bg-pink-600 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" href="{{ route('admin.account.ViewCodes', $account->id) }}">View Codes</a> <br /> <br /> <br />
                                     @if ($account->disableTransfer == 1)
                                         <a class="bg-pink-600 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" href="{{ route('admin.account.enableTransfer', $account->id) }}">Enable Transfer</a> <br /> <br /> <br />
-                                    @else
+                                    @endif
+                                    @if ($account->disableTransfer == 0)
                                         <a class="bg-pink-600 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" href="{{ route('admin.account.disable', $account->id) }}">Disable Transfers</a> <br /> <br /> <br />
                                     @endif
                                 </td>
