@@ -357,7 +357,7 @@ class AccountController extends Controller
     public function enableTransfer($id)
     {
         $account = Account::find($id);
-        $account->disableTransfer = 1;
+        $account->disableTransfer = 0;
         $account->save();
         return redirect()->route('admin.account.index')->with('success', 'Transfer has been disabled');
     }
