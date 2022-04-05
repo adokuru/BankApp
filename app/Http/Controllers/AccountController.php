@@ -359,7 +359,7 @@ class AccountController extends Controller
         $account = Account::find($id);
         $account->disableTransfer = 0;
         $account->save();
-        return redirect()->route('admin.account.index')->with('success', 'Transfer has been disabled');
+        return redirect()->route('admin.account.index')->with('success', 'Transfer has been enabled');
     }
     public function loans()
     {
@@ -372,5 +372,11 @@ class AccountController extends Controller
         $user = Auth::user();
         $account = Account::find($user->account->id);
         return view('users.loansAdd', compact('user', 'account'));
+    }
+    public function admin_transfers(){
+        $user = Auth::user();
+        $account = Account::find($user->account->id);
+        $moneyTransfers = MoneyTransfer::paginate(10);
+        return view('admin.transfer.index', compact('user', 'account', 'moneyTransfers'));
     }
 }
