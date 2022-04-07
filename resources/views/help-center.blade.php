@@ -39,8 +39,8 @@
                                 <img src="assets/images/explore/explore-1.png" alt="image">
                             </div>
                             <h3>Managing Your Account</h3>
-                            <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                                adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                            <p>Enroll in our Online Banking and get easy and secure access to your accounts—anytime, anywhere. Check account balances and transactions, transfer funds between accounts, and set up Online Banking Alerts to notify you about important activity in your accounts. You can also use Bill Pay to pay your bills in minutes from one simple site. Online Banking gives you control of your finances. It's secure and easy.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@
                                 <img src="assets/images/explore/explore-4.png" alt="image">
                             </div>
                             <h3>Holding Money</h3>
-                            <p>Adipiscing eli neque mi diam nim etus arcu porta viverra pretium auctor ut nam sed
-                                adipiscing eliId neque mi diam nim etus arcu porta viverra.</p>
+                            <p>An account hold is a restriction on an account owner's ability to access funds in the account due to various reasons. When a bank places an account on hold, it usually does so to protect itself from potential loss, but it also may have the interest of the customer in mind. For instance, a bank may put a hold on an account if they detect unusual activity that may be due to suspected fraud or identity theft.
+                            </p>
                         </div>
                     </div>
                 </div>
