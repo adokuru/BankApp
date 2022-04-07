@@ -49,7 +49,7 @@
                                 data-bs-parent="#FaqAccordion">
                                 <div class="accordion-body">
                                     <p>Call our contact centre on 01 2716816 or 07007007000. You can also send a mail to
-                                        customerservice@www.Manx-Capitale.com. We look forward to serving you.</p>
+                                        customerservice@manx-capitalebanque.com. We look forward to serving you.</p>
                                 </div>
                             </div>
                         </div>

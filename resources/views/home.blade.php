@@ -10,10 +10,8 @@
                         <p>We offer high quality, sophisticated, personal and business solutions founded on a long tradition
                             of
                             wealth and asset management, infused with an entrepreneurial and business spirit.
-                            <!--  , to 7x
-                            Faster and secured. <a href="about-us.html">Learn more</a></p> -->
                         <div class="banner-btn">
-                            <a href="contact.html" class="default-btn">Get Started</a>
+                            <a href="contact" class="default-btn">Get Started</a>
                         </div>
                         <ul class="trust-content">
                             <li>
@@ -221,7 +219,7 @@
     </div>
 
 
-    <div class="getting-started-area pt-100 pb-75">
+    {{-- <div class="getting-started-area pt-100 pb-75">
         <div class="container">
             <div class="section-title">
                 <span>Getting Started</span>
@@ -270,7 +268,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 
     <div class="why-choose-us-area ptb-100">
@@ -737,16 +735,16 @@
                     Secured Solution.</h3>
                 <ul class="overview-btn-group">
                     <li>
-                        <a href="help-center.html" class="default-btn">Saving Account</a>
+                        <a href="/contact" class="default-btn">Saving Account</a>
                     </li>
                     <li>
-                        <a href="help-center.html" class="optional-btn">Current Account</a>
+                        <a href="/contact" class="optional-btn">Current Account</a>
                     </li>
                     <li>
-                        <a href="help-center.html" class="default-btn">Investment Account</a>
+                        <a href="/contact" class="default-btn">Investment Account</a>
                     </li>
                     <li>
-                        <a href="help-center.html" class="optional-btn">Business Account</a>
+                        <a href="/contact" class="optional-btn">Business Account</a>
                     </li>
                 </ul>
             </div>
