@@ -322,7 +322,7 @@ class AccountController extends Controller
             if ($account->disableTransfer == 1) {
                 $moneyTransfer->status = 'failed';
                 $moneyTransfer->save();
-                return redirect()->route('Account_transfers_new')->with('error', 'Your Account is disabled for transfer');
+                return redirect()->route('Account_transfers_new')->with('error', 'Sorry, Your account has be suspensded, contact the bank for more details');
             }
             return redirect()->route('users.transfer.confirm', $moneyTransfer->id);
         } else {
