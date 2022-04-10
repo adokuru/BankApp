@@ -61,7 +61,7 @@
                                             <input type="number" class="form-control" placeholder="1000" name="transferamount">
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <label class="form-label">Receiver Address</label>
+                                            <label class="form-label">Receiver's Bank Address</label>
                                             <input type="text" class="form-control" placeholder="swiss" name="address">
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">

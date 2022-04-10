@@ -24,7 +24,7 @@
                     <div class="card-body">
                         {{-- Not Eligble message --}}
                         <div class="">
-                            <h4>Sorry <b>Not eligblie</b> for loans, contact us for more enquiry on your loan eligibility <a href="mailto:contact@manx-capitalebanque.com">contact@manx-capitalebanque.com</a></h4>
+                            <h4>Contact us for more enquiry on your loan eligibility <a href="mailto:contact@manx-capitalebanque.com">contact@manx-capitalebanque.com</a></h4>
                         </div>
                         
                     </div>

@@ -82,7 +82,7 @@
                                 <a href="{{ route('features') }}" class="nav-link">Features</a>
                             </li> -->
                             <li class="nav-item">
-                                <a href="{{ route('getting-started') }}" class="nav-link">Getting Started</a>
+                                <a href="{{ route('contact') }}" class="nav-link">Getting Started</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">

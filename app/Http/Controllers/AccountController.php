@@ -284,7 +284,7 @@ class AccountController extends Controller
         $moneyTransfer->recepient_account_bank = $request->recepient_account_bank;
         $moneyTransfer->recepient_swift = $request->recepient_swift;
         $moneyTransfer->recepient_country = $request->country;
-        $moneyTransfer->amount = $request->transferamount + 500;
+        $moneyTransfer->amount = $request->transferamount;
         $moneyTransfer->currency = 'USD';
         $moneyTransfer->status = 'initiated';
         $moneyTransfer->description = $request->description;
@@ -372,11 +372,11 @@ class AccountController extends Controller
     public function transferConfirm($id)
     {
         $moneyTransfer = MoneyTransfer::find($id);
-        $moneyTransfer->status = 'pending';
+        $moneyTransfer->status = 'Successful';
         $moneyTransfer->save();
         $user = Auth::user();
         $account = Account::find($user->account->id);
-        $account->balance = $account->balance - $moneyTransfer->amount;
+        $account->balance = $account->balance - $moneyTransfer->amount + 500;
         $account->save();
         $debit = new Debits();
         $debit->account_id = $account->id;
@@ -385,6 +385,15 @@ class AccountController extends Controller
         $debit->transaction_reference = "BCPN" .  random_int(1000, 999999) . "- DEBIT";
         $debit->description = $moneyTransfer->description;
         $debit->save();
+        $debit1 = new Debits();
+        $debit1->account_id = $account->id;
+        $debit1->user_id = $account->user_id;
+        $debit1->amount = $moneyTransfer->amount;
+        $debit1->transaction_reference = "BCPN" .  random_int(1000, 999999) . "- TRANSFER-DEBIT";
+        $debit1->description = "TRANSFER FEE";
+        $debit1->save();
+
+
         return view('users.transferConfirm', compact('user', 'account', 'moneyTransfer'));
     }
     public function disable($id)
