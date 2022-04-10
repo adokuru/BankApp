@@ -9,7 +9,7 @@
                             <a href="tel:44789289524329">+44 7892 8952 4329</a>
                         </li>
                         <li>
-                            <a href="mailto:davidadokuru@gmail.com"><span class="__cf_email__" data-cfemail="davidadokuru@gmail.com">[email&#160;protected]</span></a>
+                            <a href="mailto:contact@manx-capitalebanque.com"><span class="__cf_email__" data-cfemail="contact@manx-capitalebanque.com">[email&#160;protected]</span></a>
                         </li>
                     </ul>
                 </div>
