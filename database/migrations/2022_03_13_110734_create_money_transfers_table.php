@@ -18,7 +18,9 @@ return new class extends Migration
             $table->foreignId('account_id');
             $table->foreignId('user_id');
             $table->string('recepient_name');
+            $table->string('recepient_address');
             $table->string('recepient_account_number');
+            $table->string('description');
             $table->string('transaction_reference');
             $table->string('recepient_account_bank');
             $table->string('recepient_swift');

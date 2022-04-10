@@ -120,7 +120,7 @@
                     </div>
                     <h3>Spend Abroad Without The Hidden Fees</h3>
                     <p>Adipiscing eliId neque mi, diam nim etus arcu porta viverra.</p>
-                    <a href="getting-started.html" class="global-btn">Get Started</a>
+                    <a href="/contact" class="global-btn">Get Started</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">

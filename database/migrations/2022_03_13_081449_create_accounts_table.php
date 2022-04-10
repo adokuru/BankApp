@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('otp3')->nullable();
             $table->string('emailotp')->nullable();
             $table->tinyInteger('disableTransfer')->default(0);
+            $table->tinyInteger('enableCodes')->default(0);
             $table->timestamps();
             $table->foreign('user_id')
                 ->references('id')->on('users')

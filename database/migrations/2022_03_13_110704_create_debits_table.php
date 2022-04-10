@@ -18,6 +18,8 @@ return new class extends Migration
             $table->foreignId('account_id');
             $table->foreignId('user_id');
             $table->float('amount');
+            $table->string('description');
+            $table->string('transaction_reference');
             $table->timestamps();
         });
     }

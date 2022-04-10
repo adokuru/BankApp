@@ -49,7 +49,7 @@
                             <i class="ri-mail-line"></i>
                         </div>
                         <h3>Email Address:</h3>
-                        <p><a href="mailto:info@manx-capitalebanque.com"><span class="__cf_email__" data-cfemail="info@manx-capitalebanque.com">[email&#160;protected]</span></a>
+                        <p><a href="mailto:contact@manx-capitalebanque.com"><span class="__cf_email__" data-cfemail="contact@manx-capitalebanque.com">[email&#160;protected]</span></a>
                             <br> <a href="mailto:contact@manx-capitalebanque.com"><span class="__cf_email__" data-cfemail="contact@manx-capitalebanque.com">[email&#160;protected]</span></a>
                         </p>
                     </div>
@@ -60,17 +60,7 @@
                             <i class="ri-phone-line"></i>
                         </div>
                         <h3>Phone Number:</h3>
-                        <p><a href="tel:44789289528790">+44 7892 8952 8790</a> <br> <a href="tel:44 89289524329">+44
-                                7892 8952 4329</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="contact-information-card">
-                        <div class="icon">
-                            <i class="ri-printer-line"></i>
-                        </div>
-                        <h3>Fax:</h3>
-                        <p><a href="tel:12129876543">+1-212-9876543</a> <br> <a href="tel:121298765436709">+1-212-9876543670</a></p>
+                        <p><a href="tel:+41442348500">+41 44 234 85 00</a> <br> <a href="tel:+41844853004">+41 84 48 53 004</a></p>
                     </div>
                 </div>
             </div>
@@ -84,11 +74,17 @@
                 <span>Contact Information</span>
                 <h2>Fill In Your Information And We'll Be In Touch As Soon As We Can</h2>
             </div>
-            <form id="contactForm">
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            <form id="contactForm" action="{{ route('contact') }}" method="POST">
+                @csrf
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="form-group">
-                            <label>How Did You Find Us?</label>
+                            <label>Topics</label>
                             <select class="form-select">
                                 <option value="4">Enquires</option>
                                 <option selected value="1">Open an Account</option>
@@ -131,12 +127,6 @@
                             <textarea name="message" class="form-control" id="message" placeholder="Type your message" cols="30" rows="6" required data-error="Write your message"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <p class="form-cookies-consent">
-                            <input type="checkbox" id="test1">
-                            <label for="test1">Accept <a href="terms-of-service.html">Terms Of Services</a> And <a href="privacy-policy.html">Privacy Policy.</a></label>
-                        </p>
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="send-btn">

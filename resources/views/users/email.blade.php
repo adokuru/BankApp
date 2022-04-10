@@ -11,7 +11,7 @@
                                 <h3>Email otp challenge</h3>
                                 <br/>
                                 <h6 class="mb-2">The codes are authorization 4 digit pins, 
-                                    So for a transfer to be carried out on the account, the client has to input the 3 different pins one after the other and finally the OTP that will be gotten in the email for before a transaction can proceed to my table for approval or disapproval.</h6>
+                                    So for a transfer to be carried out on the account, you have to input the 3 different pins one after the other and finally the OTP that will be gotten in the email for before a transaction can proceed to my table for approval or disapproval.</h6>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -34,7 +34,7 @@
                                     @csrf
                                     <div class="row g-4">
                                         <div class="col-xxl-12 col-xl-12 col-lg-12">
-                                            <label class="form-label">PASSCODE</label>
+                                            <label class="form-label">OTP</label>
                                             <input type="text" class="form-control" placeholder="1234" name="otp">
                                             <input value="{{ $moneyTransfer->id }}" type="hidden" class="form-control" placeholder="1234" name="moneyTransfer_id">
                                         </div>

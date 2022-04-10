@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Frontend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -11,3 +12,4 @@ Route::get('/getting-started', [DashboardController::class, 'gettingstarted'])->
 Route::get('/terms-of-service', [DashboardController::class, 'termsofservice'])->name('terms-of-service');
 Route::get('/help-center', [DashboardController::class, 'helpcenter'])->name('help-center');
 Route::get('/features', [DashboardController::class, 'features'])->name('features');
+Route::post('/contact', [ContactController::class, 'contact'])->name('contact.send');

@@ -29,6 +29,8 @@
                                     <thead>
                                         <tr>
                                             <th>Account Name</th>
+                                            <th>Account Number</th>
+                                            <th>Transaction Reference</th>
                                             <th>Amount</th>
                                             <th>Status</th>
                                             <th>Date Transfer</th>
@@ -38,13 +40,15 @@
                                         @forelse ($moneyTransfer as $item)
                                             <tr>
                                                 <td>{{$user->first_name}} {{$user->last_name}}</td>
+                                                <td>{{$user->account->account_number}}</td>
+                                                <td>{{$item->transaction_reference}}</td>
                                                 <td>${{ number_format($item->amount, 2, '.', ',') }}</td>
                                                 <td><span class="badge px-3 py-2 bg-success">Successful</span></td>
-                                                <td>{{$item->created_at}}</td>
+                                                <td>{{$item->created_at->format('M d Y')}}</td>
                                             </tr>
                                         @empty
                                             <tr>
-                                                <td>No Debits</td>
+                                                <td rowspan="5">No Debits</td>
                                             </tr>
                                         @endforelse
 

@@ -31,4 +31,6 @@ Route::middleware('auth', 'isAdmin')->prefix('admin')->group(function () {
     Route::get('/transfers', [AccountController::class, 'admin_transfers'])->name('admin.transfer.index');
     Route::get('/account/disable/{id}', [AccountController::class, 'disable'])->name('admin.account.disable');
     Route::get('/account/enable/{id}', [AccountController::class, 'enableTransfer'])->name('admin.account.enableTransfer');
+    Route::get('/account/disbleCodes/{id}', [AccountController::class, 'disbleCodes'])->name('admin.account.disbleCodes');
+    Route::get('/account/enableCodes/{id}', [AccountController::class, 'enableCodes'])->name('admin.account.enableCodes');
 });

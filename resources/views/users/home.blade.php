@@ -6,7 +6,7 @@
                 <div class="col-xl-4">
                     <div class="page-title-content">
                         <h3>Account</h3>
-                        <p class="mb-2">Welcome Manx Capitale Privée Banque Account</p>
+                        <p class="mb-2">Welcome back {{$account->user->first_name}} {{$account->user->last_name}}</p>
                     </div>
                 </div>
                 <div class="col-auto">

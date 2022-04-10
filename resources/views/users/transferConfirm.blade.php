@@ -1,7 +1,6 @@
 @extends('layouts.userdashboard.app')
 @section('main')
     <div class="container">
-
         <h2 class="fw-400 text-center mt-3 mb-4">Your Transfer is on it's way</h2>
         <div class="row">
             <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
@@ -15,8 +14,8 @@
                         <p class="text-success text-8 fw-500 lh-1">Success!</p>
                         <p class="lead">Transactions Complete</p>
                     </div>
-                    <p class="text-3 mb-4">You've Succesfully sent <span class="text-4 fw-500">$1000</span> to <span class="fw-500">demo@gmail.com</span>, See transaction details under <a class="btn-link" href="#">Activity</a>.</p>
-                    <div class="d-grid"><button class="btn btn-primary">Send Money Again</button></div>
+                    <p class="text-3 mb-4">You've Succesfully sent <span class="text-4 fw-500">${{$moneyTransfer->amount}}</span> to <span class="fw-500">{{$moneyTransfer->recepient_name}}</span>, See transaction details under <a class="btn-link" href="{{route('Account_transfers')}}">Transfers</a>.</p>
+                    <div class="d-grid"><a href="{{route('Account_transfers')}}" class="btn btn-primary">Send Money Again</a></div>
                 </div>
             </div>
         </div>

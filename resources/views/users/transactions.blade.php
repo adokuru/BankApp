@@ -27,7 +27,7 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Account Name</th>
+                                            <th>Account Number</th>
                                             <th>Amount</th>
                                             <th>Transaction Type</th>
                                             <th>Date</th>
@@ -36,9 +36,9 @@
                                     <tbody>
                                         @forelse ($transactions as $item)
                                             <tr>
-                                                <td>{{ $user->first_name }} {{ $user->last_name }}</td>
+                                                <td>{{ $user->account->account_number }}</td>
                                                 <td>${{ $item->amount }}</td>
-                                                <td><span class="badge px-3 py-2 bg-success">Successful</span></td>
+                                                <td>{{ $item->type }}</td>
                                                 <td>{{ $item->created_at }}</td>
                                             </tr>
                                         @empty

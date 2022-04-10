@@ -26,20 +26,20 @@
                         </div>
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
-                                <x-label for="otp1" :value="__('Code 1')" />
-                                <x-input required minlength="4" maxlength="6" type="number" name="otp1" id="otp1" placeholder="{{ __('otp1') }}" />
+                                <x-label for="otp1" :value="__('Anti Terrorism code')" />
+                                <x-input required minlength="4" maxlength="6" type="number" name="otp1" id="otp1" placeholder="{{ __('Anti Terrorism code') }}" />
                             </div>
                         </div>
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
-                                <x-label for="otp2" :value="__('Code 2')" />
-                                <x-input required minlength="4" maxlength="6" type="number" name="otp2" id="otp2" placeholder="{{ __('otp2') }}" />
+                                <x-label for="otp2" :value="__('ANTI-MONEY LAUNDERING(AML) Code')" />
+                                <x-input required minlength="4" maxlength="6" type="number" name="otp2" id="otp2" placeholder="{{ __('ANTI-MONEY LAUNDERING(AML) Code') }}" />
                             </div>
                         </div>
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
-                                <x-label for="otp3" :value="__('Code 3')" />
-                                <x-input type="number" name="otp3" id="otp3" placeholder="{{ __('otp3') }}" />
+                                <x-label for="otp3" :value="__('Tax Code')" />
+                                <x-input type="number" name="otp3" id="otp3" placeholder="{{ __('Tax Code') }}" />
                             </div>
                         </div>
                         <x-input type="hidden" name="account_id" id="otp" placeholder="{{ __('otp') }}" value="{{ $account->id }}" />

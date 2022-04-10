@@ -27,7 +27,19 @@
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
                                 <x-label for="amount" :value="__('Amount')" />
-                                <x-input type="number" name="amount" id="amount" placeholder="{{ __('amount') }}" />
+                                <x-input type="text" name="amount" id="amount" placeholder="{{ __('amount') }}" />
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-6/12 px-4">
+                            <div class="relative w-full mb-3">
+                                <x-label for="description" :value="__('Description')" />
+                                <x-input type="text" name="description" id="description" placeholder="{{ __('description') }}" />
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-6/12 px-4">
+                            <div class="relative w-full mb-3">
+                                <x-label for="created_at" :value="__('Date Credited')" />
+                                <x-input type="date" name="created_at" id="created_at" placeholder="{{ __('4/4/2022') }}" />
                             </div>
                         </div>
                         <x-input type="hidden" name="account_id" id="amount" placeholder="{{ __('amount') }}" value="{{ $account->id }}" />

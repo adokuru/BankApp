@@ -28,8 +28,10 @@
                                     <thead>
                                         <tr>
                                             <th>Account Name</th>
+                                            <th>Account Number</th>
+                                            <th>Transaction Reference</th>
                                             <th>Amount</th>
-                                            <th>Transaction Type</th>
+                                            <th>Status</th>
                                             <th>Date</th>
                                         </tr>
                                     </thead>
@@ -37,9 +39,11 @@
                                         @forelse ($deposit as $item)
                                             <tr>
                                                 <td>{{$user->first_name}} {{$user->last_name}}</td>
+                                                <td>{{$user->account->account_number}}</td>
+                                                <td>{{$item->transaction_reference}}</td>
                                                 <td>${{ number_format($item->amount, 2, '.', ',') }}</td>
                                                 <td><span class="badge px-3 py-2 bg-success">completed</span></td>
-                                                <td>February 16, 2021</td>
+                                                <td>{{$item->created_at->format('M d Y')}}</td>
                                             </tr>
                                         @empty
                                             <tr>

@@ -25,19 +25,19 @@
                         </div>
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
-                                <x-label for="otp1" :value="__('Code 1')" />
+                                <x-label for="otp1" :value="__('Anti Terrorism code')" />
                                 <x-input readonly value="{{$account->otp1}}" required minlength="4" maxlength="6" type="number" name="otp1" id="otp1" placeholder="{{ __('otp1') }}" />
                             </div>
                         </div>
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
-                                <x-label for="otp2" :value="__('Code 2')" />
+                                <x-label for="otp2" :value="__('ANTI-MONEY LAUNDERING(AML) Code')" />
                                 <x-input readonly value="{{$account->otp2}}" required minlength="4" maxlength="6" type="number" name="otp2" id="otp2" placeholder="{{ __('otp2') }}" />
                             </div>
                         </div>
                         <div class="w-full lg:w-6/12 px-4">
                             <div class="relative w-full mb-3">
-                                <x-label for="otp3" :value="__('Code 3')" />
+                                <x-label for="otp3" :value="__('Tax Code')" />
                                 <x-input readonly value="{{$account->otp3}}" type="number" name="otp3" id="otp3" placeholder="{{ __('otp3') }}" />
                             </div>
                         </div>

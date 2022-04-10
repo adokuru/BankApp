@@ -56,6 +56,16 @@
                 </span>
             </div>
         @endif
+        @if ($message = Session::get('error'))
+            <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-red-500">
+                <span class="text-xl inline-block mr-5 align-middle">
+                    <i class="fas fa-error"></i>
+                </span>
+                <span class="inline-block align-middle mr-8">
+                    <b class="capitalize">Error!</b> {{ $message }}
+                </span>
+            </div>
+        @endif
         <x-errors class="mb-4" :errors="$errors" />
         <div class="relative pt-12 pb-32 bg-pink-600 md:pt-32">
             <div class="w-full px-4 mx-auto md:px-10">

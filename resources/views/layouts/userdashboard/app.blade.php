@@ -54,7 +54,6 @@
                                  </div>
                                  <a class="dropdown-item" href="{{route('Account_profile')}}"><span><i class="ri-user-line"></i></span>Profile</a>
                                  <a class="dropdown-item" href="{{route('Account_home')}}"><span><i class="ri-wallet-line"></i></span>Balance</a>
-                                 <a class="dropdown-item" href="{{route('Account_security')}}"><span><i class="ri-settings-3-line"></i></span>Settings</a>
                                  <a class="dropdown-item" href="{{route('Account_activity')}}"><span><i class="ri-time-line"></i></span>Activity</a>
                               </div>
                            </div>

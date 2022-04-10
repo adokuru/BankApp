@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('deposits', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('account_id');
-            $table->foreignId('user_id');
-            $table->float('amount');
-            $table->string('description');
-            $table->string('transaction_reference');
+            $table->string('name');
+            $table->string('msg_subject');
+            $table->string('phone_number');
+            $table->string('email');
+            $table->text('message');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deposits');
+        Schema::dropIfExists('contacts');
     }
 };

@@ -29,7 +29,7 @@
                         <div class="card">
                             <div class="card-header">
                                 @if ($message = Session::get('error'))
-                                    <h3><b class="capitalize">Error!</b> {{ $message }}</h3>
+                                    <h3 style="color:red"><b style="color:red" class="capitalize text-red-800">{{ $message }}</b></h3>
                                 @endif
                             </div>
                             <div class="card-body">
@@ -59,6 +59,14 @@
                                         <div class="col-xxl-6 col-xl-6 col-lg-6">
                                             <label class="form-label">Amount to Transfer [ + Transfer Fee ($500) ] (Account )</label>
                                             <input type="number" class="form-control" placeholder="1000" name="transferamount">
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                            <label class="form-label">Receiver Address</label>
+                                            <input type="text" class="form-control" placeholder="swiss" name="address">
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                            <label class="form-label">Description / Remark</label>
+                                            <input type="text" class="form-control" placeholder="to mike" name="description">
                                         </div>
                                         <div class="col-12">
                                             <button class="btn btn-primary pl-5 pr-5">Send Money</button>
