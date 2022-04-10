@@ -14,7 +14,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $contacts = Contact::orderBy('id', 'desc')->paginate(10);
+        return view('admin.contact.index', compact('contacts'));
     }
     public function contact(Request $request)
     {
@@ -31,5 +32,10 @@ class ContactController extends Controller
         $contact->message = $request->message;
         $contact->save();
         return redirect()->back()->with('success', 'Your message has been sent successfully');
+    }
+    public function show($id)
+    {
+        $contact = Contact::find($id);
+        return view('admin.contact.show', compact('contact'));
     }
 }

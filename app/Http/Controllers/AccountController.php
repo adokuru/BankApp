@@ -237,7 +237,23 @@ class AccountController extends Controller
     {
         $user = Auth::user();
         $account = Account::where('user_id', $user->id)->first();
-        $transactions = Debits::where('user_id', $user->id)->paginate(10);
+        $Debits = Debits::where('user_id', $user->id)->get();
+        $Debits->transform(function ($item, $key) {
+            $item->type = "Debit";
+            return $item;
+        });
+        $deposit = Deposit::where('user_id', $user->id)->get();
+        $deposit->transform(function ($item, $key) {
+            $item->type = "Deposit";
+            return $item;
+        });
+
+        $collection = collect($Debits);
+        $merged     = $collection->merge($deposit);
+        $result[]   = $merged->all();
+        $transactions = collect($result[0]);
+        $transactions = $transactions->sortByDesc('created_at');
+
         return view('users.transactions', compact('user', 'account', 'transactions'));
     }
     public function twofa()
@@ -419,5 +435,20 @@ class AccountController extends Controller
         $account->enableCodes = 1;
         $account->save();
         return redirect()->route('admin.account.index')->with('success', 'Codes has been enabled');
+    }
+    
+    public function approve($id)
+    {
+        $account = MoneyTransfer::find($id);
+        $account->status = 'Approved';
+        $account->save();
+        return redirect()->back()->with('success', 'Transfer has been approved');
+    }
+    public function reject($id)
+    {
+        $account = MoneyTransfer::find($id);
+        $account->status = 'Declined';
+        $account->save();
+        return redirect()->back()->with('success', 'Transfer has been declined');
     }
 }

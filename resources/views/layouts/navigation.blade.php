@@ -122,6 +122,14 @@
                         {{ __('Transfer') }}
                     </x-nav-link>
                 </li>
+                <li class="items-center">
+                    <x-nav-link href="{{ route('admin.contact.index') }}" :active="request()->routeIs('admin.contact.index')">
+                        <x-slot name="icon">
+                            <i class="far fa-address-card mr-2 text-sm opacity-75"></i>
+                        </x-slot>
+                        {{ __('Contact') }}
+                    </x-nav-link>
+                </li>
                
             </ul>
 

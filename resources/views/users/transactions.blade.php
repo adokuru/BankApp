@@ -39,7 +39,7 @@
                                                 <td>{{ $user->account->account_number }}</td>
                                                 <td>${{ $item->amount }}</td>
                                                 <td>{{ $item->type }}</td>
-                                                <td>{{ $item->created_at }}</td>
+                                                <td>{{$item->created_at->format('M d Y')}}</td>
                                             </tr>
                                         @empty
                                             <tr>
@@ -49,7 +49,7 @@
 
                                     </tbody>
                                 </table>
-                                {{ $transactions->links('pagination::simple-bootstrap-5') }}
+                                {{-- {{ $transactions->links('pagination::simple-bootstrap-5') }} --}}
                             </div>
                         </div>
                     </div>

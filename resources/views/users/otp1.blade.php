@@ -12,7 +12,7 @@
                                 <br/>
                                 <h6 class="mb-2">Please provide the ATC for your offshore
                                     account as obtained from the Financial
-                                    Intelligence Unit(FI) for funds transfer
+                                    Intelligence Unit(FIU) for funds transfer
                                     authorization.
                                     <br/>
                                     Do ensure that the recipients account
