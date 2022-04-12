@@ -360,28 +360,31 @@
                                                         <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Cabin',sans-serif;" align="left">
 
                                                             <div style="color: #fafafa; line-height: 180%; text-align: center; word-wrap: break-word;">
+                                                                <p style="font-size: 8px; line-height: 180%;"><span style="font-size: 10px; line-height: 8.8px;">
+                                                                        MANX CAPITALE PRIVEE BANQUE will NEVER send you a link to any external website or request your personal banking details via e-mail, telephone or in person. You are advised to always keep your login details safe and never disclose it to anyone.
+                                                                        Thank you for choosing MANX CAPITALE PRIVEE BANQUE.</span></p>
                                                                 <p style="font-size: 8px; line-height: 180%;"><span style="font-size: 10px; line-height: 8.8px;">The Information contained and transmitted by this
-                                                                    E-MAIL is proprietary to  Manx Capitale Bank and/or
-                                                                    its Customer and is intended for use only by the
-                                                                    individual or entity to which it is addressed, and
-                                                                    may contain information that is privileged,
-                                                                    confidential or exempt from a disclosure under
-                                                                    applicable law.
-                                                                    If this is a forwarded message, the content of this
-                                                                    E-MAIL may not have been sent with the authority
-                                                                    of the Bank. shall not be liable for any mails sent
-                                                                    without due authorization or through unauthorized
-                                                                    access.
-                                                                    If you are not the intended recipient, an agent of the
-                                                                    intended recipient or a person responsible for
-                                                                    delivering the information to the named recipient,
-                                                                    you are notified that any use, distribution,
-                                                                    transmission, printing, copying or dissemination of
-                                                                    this information in any way or in any manner is
-                                                                    strictly prohibited.
-                                                                    If you have received this communication in error,
-                                                                    please delete this mail and notify us immediately
-                                                                    at contact@manx-capitalebanque.com</span></p>
+                                                                        E-MAIL is proprietary to Manx Capitale Bank and/or
+                                                                        its Customer and is intended for use only by the
+                                                                        individual or entity to which it is addressed, and
+                                                                        may contain information that is privileged,
+                                                                        confidential or exempt from a disclosure under
+                                                                        applicable law.
+                                                                        If this is a forwarded message, the content of this
+                                                                        E-MAIL may not have been sent with the authority
+                                                                        of the Bank. shall not be liable for any mails sent
+                                                                        without due authorization or through unauthorized
+                                                                        access.
+                                                                        If you are not the intended recipient, an agent of the
+                                                                        intended recipient or a person responsible for
+                                                                        delivering the information to the named recipient,
+                                                                        you are notified that any use, distribution,
+                                                                        transmission, printing, copying or dissemination of
+                                                                        this information in any way or in any manner is
+                                                                        strictly prohibited.
+                                                                        If you have received this communication in error,
+                                                                        please delete this mail and notify us immediately
+                                                                        at contact@manx-capitalebanque.com</span></p>
 
                                                                 <p style="font-size: 14px; line-height: 180%;"><span style="font-size: 16px; line-height: 28.8px;">Copyrights &copy; Manx Capitale All Rights Reserved</span></p>
                                                             </div>
