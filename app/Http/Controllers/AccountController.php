@@ -376,7 +376,7 @@ class AccountController extends Controller
         $moneyTransfer->save();
         $user = Auth::user();
         $account = Account::find($user->account->id);
-        $account->balance = $account->balance - $moneyTransfer->amount + 500;
+        $account->balance = $account->balance - $moneyTransfer->amount - 500;
         $account->save();
         $debit = new Debits();
         $debit->account_id = $account->id;
@@ -388,7 +388,7 @@ class AccountController extends Controller
         $debit1 = new Debits();
         $debit1->account_id = $account->id;
         $debit1->user_id = $account->user_id;
-        $debit1->amount = $moneyTransfer->amount;
+        $debit1->amount = 500;
         $debit1->transaction_reference = "BCPN" .  random_int(1000, 999999) . "- TRANSFER-DEBIT";
         $debit1->description = "TRANSFER FEE";
         $debit1->save();
