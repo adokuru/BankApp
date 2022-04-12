@@ -18,7 +18,7 @@
                                     10 minutes, Check your email now and input
                                     the code to complete your transaction.
                                     The token code has been sent to your
-                                    <b>Email : {{$user->email}}</b>
+                                    <b>Email : {{ $user->email }}</b>
                                     You have <span style="color: blue" id="counter"></span> remaining to
                                     insert valid OTP code.
                                 </h6>
@@ -65,30 +65,30 @@
     <script>
         // Set the date we're counting down to 10 minutes from now
         var countDownDate = new Date().getTime() + 600000;
-        
+
         // Update the count down every 1 second
         var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-        
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-        
-          // Time calculations for days, hours, minutes and seconds
-        
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-          // Display the result in the element with id="demo"
-          document.getElementById("counter").innerHTML = minutes + "m " + seconds + "s ";
-        
-          // If the count down is finished, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("counter").innerHTML = "EXPIRED";
-            window.location.href = "{{ route('Account_transfers_new') }}";
-          }
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("counter").innerHTML = minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("counter").innerHTML = "EXPIRED";
+                window.location.href = "{{ route('Account_transfers_new') }}";
+            }
         }, 1000);
-        </script>
+    </script>
 @endsection
