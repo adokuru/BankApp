@@ -19,7 +19,7 @@
                                     the code to complete your transaction.
                                     The token code has been sent to your
                                     <b>Email : {{$user->email}}</b>
-                                    You have <span style="color: blue" id="counter"></span> minutes remaining to
+                                    You have <span style="color: blue" id="counter"></span> remaining to
                                     insert valid OTP code.
                                 </h6>
                             </div>
@@ -87,7 +87,7 @@
           if (distance < 0) {
             clearInterval(x);
             document.getElementById("counter").innerHTML = "EXPIRED";
-            window.location.href = "{{ route('fundstransfer') }}";
+            window.location.href = "{{ route('Account_transfers_new') }}";
           }
         }, 1000);
         </script>
