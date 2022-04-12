@@ -205,7 +205,7 @@ class AccountController extends Controller
     public function profile()
     {
         $user = Auth::user();
-        return view('users.profile', compact('user'));
+        return view('users.userprofile', compact('user'));
     }
     public function security()
     {
