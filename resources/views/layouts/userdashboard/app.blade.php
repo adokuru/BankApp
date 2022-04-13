@@ -41,7 +41,7 @@
                          
                            <div class="dropdown profile_log dropdown">
                               <div data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
-                                <img class="me-3 rounded-circle me-0 me-sm-3" src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ auth()->user()->first_name }}{{ auth()->user()->last_name }}" width="55" height="55" alt="">
+                                <img class="me-3 rounded-circle me-0 me-sm-3"src="{{ $user->image? asset('images/'.$user->image): 'https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=' . $user->first_name . '+' . $user->last_name }}" width="55" height="55" alt="">
                               </div>
                               <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu dropdown-menu-right">
                                  <div class="user-email">

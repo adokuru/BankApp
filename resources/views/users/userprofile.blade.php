@@ -1,6 +1,22 @@
 @extends('layouts.userdashboard.app')
 @section('main')
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>{{ $message }}</strong>
+        </div>
+    @endif
 
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -30,36 +46,34 @@
                                 <h4 class="card-title">User Profile</h4>
                             </div>
                             <div class="card-body">
-                                <form action="#">
-                                    <div class="row g-3">
-                                        <div class="col-xxl-12 col-12 mb-3">
-                                            <label class="form-label">Full Name</label>
-                                            <input type="text" class="form-control" placeholder="{{ $user->first_name }}" value="{{ $user->first_name }} {{ $user->last_name }}">
-                                        </div>
-                                        <div class="col-xxl-12 col-12 mb-3">
-                                            <div class="d-flex align-items-center">
-                                                <img class="me-3 rounded-circle me-0 me-sm-3" src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ $user->first_name }}{{ $user->last_name }}" width="55" height="55" alt="">
-                                                <div class="media-body">
-                                                    <h4 class="mb-0">{{ $user->name }}</h4>
-                                                    <p class="mb-0">Max file size is 5mb
-                                                    </p>
-                                                </div>
+                                <div class="row g-3">
+                                    <div class="col-xxl-12 col-12 mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="{{ $user->first_name }}" value="{{ $user->first_name }} {{ $user->last_name }}">
+                                    </div>
+                                    <div class="col-xxl-12 col-12 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <img class="me-3 rounded-circle me-0 me-sm-3" src="{{ $user->image? asset('images/'.$user->image): 'https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=' . $user->first_name . '+' . $user->last_name }}" width="55" height="55" alt="">
+                                            <div class="media-body">
+                                                <h4 class="mb-0">{{ $user->name }}</h4>
+                                                <p class="mb-0">Max file size is 2mb
+                                                </p>
                                             </div>
-                                        </div>
-                                        <div class="col-xxl-12 col-12 mb-3">
-                                            <div class="form-file">
-                                                <input type="file" class="form-file-input" id="customFile">
-                                                <label class="form-file-label" for="customFile">
-                                                    <!-- <span class="form-file-text">Choose file...</span> -->
-                                                    <!-- <span class="form-file-button">Browse</span> -->
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xxl-12 col-12 mb-3">
-                                            <button class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
-                                </form>
+                                    <form action="{{ route('updatePhoto') }}" enctype="multipart/form-data" method="POST">
+                                        <div class="col-xxl-12 col-12 mb-3">
+                                            <div class="form-file">
+                                                <input type="hidden" name="id" value="{{ $user->id }}">
+                                                <input type="file" name="image" class="form-file-input" accept="image/png, image/jpg, image/jpeg, image/gif">
+                                                @csrf
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12 col-12 mb-3">
+                                            <button class="btn btn-primary" type="submit">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -82,7 +96,7 @@
                                             <input type="password" class="form-control" placeholder="**********" name="password">
                                             <label class="form-label">Confirm New Password</label>
                                             <input type="password" class="form-control" placeholder="**********" name="confirm_password">
-                                            
+
                                         </div>
                                         <div class="col-12 col-12 mb-3">
                                             <button class="btn btn-primary">Save</button>

@@ -37,4 +37,18 @@ class ProfileController extends Controller
         ]);
         return redirect()->back()->with('success', 'Account updated.');
     }
+    // upload photo
+    public function updatePhoto(Request $request)
+    {
+        $user = User::find($request->id);
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        $imageName = time().'.'.$request->image->extension();  
+        $request->image->move(public_path('images'), $imageName);
+        $user->update([
+            'image' => $imageName,
+        ]);
+        return redirect()->back()->with('success', 'Photo updated.');
+    }
 }

@@ -216,14 +216,14 @@ class AccountController extends Controller
     {
         $user = Auth::user();
         $account = Account::where('user_id', $user->id)->first();
-        $deposit = Deposit::where('user_id', $user->id)->paginate(10);
+        $deposit = Deposit::where('user_id', $user->id)->orderBy('created_at', 'desc')->paginate(10);
         return view('users.deposit', compact('user', 'account', 'deposit'));
     }
     public function debits()
     {
         $user = Auth::user();
         $account = Account::where('user_id', $user->id)->first();
-        $moneyTransfer = Debits::where('user_id', $user->id)->paginate(10);
+        $moneyTransfer = Debits::where('user_id', $user->id)->orderBy('created_at', 'desc')->paginate(10);
         return view('users.debit', compact('user', 'account', 'moneyTransfer'));
     }
     public function transfers()

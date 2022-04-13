@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['auth','verified']], function () {
@@ -22,6 +23,5 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::post('/account/transfers/otp3', [AccountController::class, 'otp3'])->name('transferOTP3');
     Route::post('/account/transfers/emailotp', [AccountController::class, 'emailotp'])->name('emailotp');
     Route::get('/account/transfers/confirm/{id}', [AccountController::class, 'transferConfirm'])->name('users.transfer.confirm');
+    Route::Post('account/photo', [ProfileController::class, 'updatePhoto'])->name('updatePhoto');
 });
-
-Route::get('/account/2fa', [AccountController::class, 'twofa'])->name('Account_2fa');
