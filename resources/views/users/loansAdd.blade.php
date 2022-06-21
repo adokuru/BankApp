@@ -1,11 +1,5 @@
 @extends('layouts.userdashboard.app')
 @section('main')
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="https://html-template.spider-themes.net/banca/banca-html/img/favicon.png" type="image/x-icon">
-
     <!-- CSS here -->
     <link rel="stylesheet" type="text/css" href="https://html-template.spider-themes.net/banca/banca-html/css/bootstrap.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="https://html-template.spider-themes.net/banca/banca-html/css/elegant-icons.min.css" media="all" />
@@ -18,27 +12,6 @@
 
 
     <main>
-        <!-- BreadCrumb start -->
-        <section class="breadcrumb-area">
-            <div class="breadcrumb-widget  pt-200 pb-110" style="background-image: url(img/breadcrumb/bg-1.png);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="breadcrumb-content pt-85">
-                                <h1>Loan deatails</h1>
-                                <ul>
-                                    <li><a href="index.html">home</a></li>
-                                    <li><a href="index.html">pages</a></li>
-                                    <li>loan</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- BreadCrumb end -->
-
         <!-- Loan details start -->
         <section class="loan-deatils-area bg_disable pt-130 pb-120">
             <div class="container">
