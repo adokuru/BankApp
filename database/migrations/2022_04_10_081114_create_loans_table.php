@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->foreignId('account_id');
             $table->string('msg_subject');
             $table->string('phone_number');
             $table->string('email');
