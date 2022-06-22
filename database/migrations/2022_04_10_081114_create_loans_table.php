@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('account_id');
             $table->string('loan_type');
             $table->string('financing');
-            $table->string('loan-amount');
+            $table->decimal('loan-amount', 18, 4)->default(0);
             $table->integer('duration');
             $table->integer('status')->default(0);
             $table->string('id_card')->nullable();
