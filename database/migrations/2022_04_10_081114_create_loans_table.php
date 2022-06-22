@@ -16,10 +16,12 @@ return new class extends Migration
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
             $table->foreignId('account_id');
-            $table->string('msg_subject');
-            $table->string('phone_number');
-            $table->string('email');
-            $table->text('message');
+            $table->string('loan_type');
+            $table->string('financing');
+            $table->string('loan-amount');
+            $table->integer('duration');
+            $table->integer('status')->default(0);
+            $table->string('id_card')->nullable();
             $table->timestamps();
         });
     }

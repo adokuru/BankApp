@@ -31,17 +31,32 @@
                                             <th>Account Name</th>
                                             <th>Amount</th>
                                             <th>Status</th>
-                                            <th>Date Transfer</th>
+                                            <th>Date initiated</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                         @forelse ($loans as $item)
                                             <tr>
-                                                <td>No Loans</td>
+                                                <td>{{$user->first_name}} {{$user->last_name}}</td>
+                                                <td>${{ number_format($item['loan-amount'], 2, '.', ',') }}</td>
+                                                <td>{{$item->status == 0 ? 'Pending' : 'Awaiting Approval'}}</td>
+                                                <td>{{$item->created_at}}</td>
+                                                <td>@if($item->status == 2)
+                                                    <a href="{{ route('loan.single', $item->id) }}" class="btn btn-primary pl-5 pr-5">View</a>
+                                                    @else
+                                                    <button class="btn btn-primary pl-5 pr-5">No Action</button>
+                                                    @endif    
+                                                </td>
                                             </tr>
-
+                                        @empty
+                                            <tr>
+                                                <td>No Fund Transfer</td>
+                                            </tr>
+                                        @endforelse
                                     </tbody>
                                 </table>
-                               
+                                   {{ $loans->links('pagination::simple-bootstrap-5') }}
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\OtpMail;
 use App\Models\Account;
 use App\Models\Debits;
+use App\Models\Loan;
 use App\Models\Deposit;
 use App\Models\MoneyTransfer;
 use App\Models\User;
@@ -414,7 +415,8 @@ class AccountController extends Controller
     {
         $user = Auth::user();
         $account = Account::find($user->account->id);
-        return view('users.loans', compact('user', 'account'));
+        $loans = Loan::where('account_id',$account->id)->paginate(10);
+        return view('users.loans', compact('user', 'account','loans'));
     }
     public function loans_add()
     {

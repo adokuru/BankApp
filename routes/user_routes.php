@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LoansController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['auth','verified']], function () {
@@ -24,4 +25,12 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::post('/account/transfers/emailotp', [AccountController::class, 'emailotp'])->name('emailotp');
     Route::get('/account/transfers/confirm/{id}', [AccountController::class, 'transferConfirm'])->name('users.transfer.confirm');
     Route::Post('account/photo', [ProfileController::class, 'updatePhoto'])->name('updatePhoto');
+
+    Route::post('loans/add/step-1',[LoansController::class, 'step1'])->name('loans.step1');
+
+    Route::post('loans/add/step-2',[LoansController::class, 'step2'])->name('loans.step2');
+
+    Route::post('loans/add/step-3',[LoansController::class, 'step3'])->name('loans.step3');
+
+    Route::post('loans/{id}',[LoansController::class, 'show'])->name('loan.single');
 });

@@ -31,7 +31,6 @@
                                             <th>Account Number</th>
                                             <th>Transaction Reference</th>
                                             <th>Amount</th>
-                                            <th>Status</th>
                                             <th>Date</th>
                                         </tr>
                                     </thead>
@@ -42,7 +41,6 @@
                                                 <td>{{$user->account->account_number}}</td>
                                                 <td>{{$item->transaction_reference}}</td>
                                                 <td>${{ number_format($item->amount, 2, '.', ',') }}</td>
-                                                <td><span class="badge px-3 py-2 bg-success">completed</span></td>
                                                 <td>{{$item->created_at->format('M d Y')}}</td>
                                             </tr>
                                         @empty
